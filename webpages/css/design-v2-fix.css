@@ -1,0 +1,408 @@
+/* .table{
+  border-spacing: 0 5px !important;
+} */
+/**
+* General
+*/
+
+td,
+td a {
+  text-decoration: none;
+}
+
+/* 
+
+.symbols-box .uniform-box {
+	height: 352px !important;
+} */
+
+/**
+*  Criação de escudo e uniforme.
+*/
+
+.choose-list li {
+  background-color: #ffffff;
+}
+
+.choose-color .color-item {
+  border-radius: 0px !important;
+}
+
+.logo-item.sponsor-reis {
+  background-image: url('../images/logo/reis-logo.svg');
+}
+
+.logo-item.sponsor-ball {
+  background-image: url('../images/logo/ball-logo.svg');
+}
+
+.logo-item.sponsor-crown {
+  background-image: url('../images/logo/crown-logo.svg');
+}
+
+/*
+* design-v2.css
+* Remover .choose-list:not(.alt) .active{ background: #184175; }
+*/
+
+/**
+* Dashboard
+*/
+.modal-pwa-alert {
+  text-align: center;
+}
+
+/* .next-turns{
+  margin-top: 30px;
+} */
+
+#page-torneios-lobby .CSSgal {
+  height: 100%;
+  background-color: transparent !important;
+}
+#page-torneios-lobby .slider {
+  background-color: transparent !important;
+}
+#page-torneios-lobby .body-slider {
+  background-color: transparent !important;
+}
+#page-torneios-lobby .CSSgal .card-body a {
+  border-radius: 5px;
+}
+.page-home #wrapper {
+  height: 100vh;
+  padding: 0px;
+}
+.turns-container {
+  padding-bottom: 30px;
+}
+#page-torneios-lobby .CSSgal .prevNext {
+  top: 44%;
+}
+#page-torneios-lobby .CSSgal .bullets {
+  padding: 0px;
+}
+#page-torneios-lobby .CSSgal .bullets > a {
+  width: 10px;
+  height: 10px;
+}
+
+.page-dashboard .turns-bottom {
+  margin-top: 0px;
+}
+
+.container .avatar-box {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 48px !important;
+  height: 48px !important;
+  float: left;
+  display: table;
+}
+.avatar-box .logo-box {
+  width: 32px;
+  margin: 0px auto;
+}
+
+.game-history-separator {
+  width: 34px;
+  text-align: center;
+}
+
+.match-date-detail {
+  padding-left: 5px;
+}
+.league-name-detail {
+  padding-left: 5px;
+}
+
+.team-identity-away img {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-left: 2px;
+  height: 32px;
+}
+
+.td-budget {
+  text-align: center;
+}
+
+.btn.active {
+  pointer-events: all !important;
+}
+
+/* .td-follow-match{
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+} */
+/* .gridiron-wrap{
+  top: 30px;
+} */
+/* .info-gridiron{
+  position: absolute;
+  left: -34px;
+  width: 100%;
+}
+.timer{
+  height: 46px;
+.lineup-block .create-wrap > .choose-player-popup .search-field {
+  width: 280px;
+  right: 174px;
+}
+.choose-player-popup .search-field .form-control{
+  height: 44px;
+}
+ */
+
+.check-button {
+  height: 25px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+.match-filter {
+  margin-right: 4px;
+}
+
+.UserRanking tr th {
+  height: 12px;
+  vertical-align: middle;
+  padding: 6px;
+}
+
+.UserRanking tr td {
+  height: 90px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 8px;
+}
+.UserRanking tr td strong {
+  font-size: 16px;
+}
+
+#button-tabs-alter {
+  margin: 0px;
+  padding: 0px;
+}
+
+#button-tabs-alter ul {
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  width: 100%;
+  background-color: #ededed;
+  list-style: none;
+  font: 80% Tahoma;
+}
+
+#button-tabs-alter ul li {
+  display: inline;
+}
+
+#button-tabs-alter ul li a {
+  background-color: #ededed;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 3px solid #ededed;
+  padding: 2px 10px;
+  float: left;
+}
+
+#button-tabs-alter ul li a:hover {
+  background-color: #d6d6d6;
+  color: #6d6d6d;
+  border-bottom: 3px solid rgb(34, 50, 73);
+}
+
+#button-tabs-alter ul li .active {
+  background-color: #d6d6d6;
+  color: #6d6d6d;
+  border-bottom: 3px solid rgb(34, 50, 73);
+}
+
+.uniform-logo-box {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+.UserRanking .uniform-box {
+  margin: 0 auto;
+  width: 48px !important;
+  height: 48px !important;
+  position: relative;
+}
+.UserRanking .logo-box {
+  width: 24px;
+  position: absolute;
+  right: 0px;
+  top: 60%;
+}
+#nav > ul > li > a {
+  line-height: 20px !important;
+}
+
+.badge-history {
+  margin-left: 2px;
+}
+
+div#page-torneios-lobby
+  .card.card-torneio
+  .card-body
+  h5.card-title
+  img.icon-torneio {
+  height: 17px !important;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+.card-torneio .card-hero {
+  line-height: 1;
+}
+
+.tab-content.active {
+  margin-bottom: 30px;
+}
+
+.modal-game-list .modal-center-content {
+  left: -22px;
+}
+
+.empty-result {
+  text-align: center;
+  width: 725px;
+  max-width: 100%;
+}
+
+/* Deposit */
+
+/* Financial History */
+.pagination-container {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.pagination-container .page-item {
+  padding: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.page-item .active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/**
+* Modal entrar em torneio 
+*/
+.lobby-torneios .modal-details {
+  min-height: 730px;
+  min-width: 750px;
+}
+
+.lobby-torneios .modal-details .modal-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+div#page-lobby-entrar .matches .sponsors {
+  height: 390px;
+  margin-bottom: 100px;
+}
+
+#modal .info-torneio span {
+  text-align: left;
+}
+
+/**
+* Login
+*/
+
+/**
+*  Torneios > Lobby.
+*/
+
+.radada-filter.selected img {
+  /* remover depois */
+  filter: none;
+  opacity: 1;
+}
+
+.radada-filter span {
+  /* remover depois */
+  text-align: center;
+  color: #ccc;
+  display: block;
+}
+
+.radada-filter.selected span {
+  /* remover depois */
+  color: #000000;
+}
+
+/**
+*  Torneios > Acompanhar (Live)
+*/
+/**
+*  design-v2.css
+*  #wrapper.parciais{
+*     background: url(../images/torcida.png),url(../images/field2.png) ,url(../images/bg-live.png) #1d293c;
+*     ...
+*  }
+*/
+
+#wrapper.parciais .create-wrap .player-item .player-points {
+  z-index: 90 !important;
+}
+
+.lineup-block .table-players {
+  margin-top: 15px !important;
+}
+
+/**
+* Escalações
+*/
+
+.page-lineup.page-lineup-list .main .league-col h2 {
+  margin-bottom: 0px;
+}
+
+/**
+*  Entrar em torneio > Ag Grid.
+*/
+.ag-grid-team-uniform {
+  display: inline-block;
+}
+.ag-grid-team-uniform img {
+  height: 35px;
+}
+
+/**
+* design-v2.css
+* - Remover .table-players .ag-center-cols-clipper {*}
+* - Remover .table-players .ag-header {*}
+* - Remover .table-players .ag-center-cols-container .ag-row { margin: }
+* - Subtituir .table-players .ag-center-cols-container .ag-row > div[col-id="full_name"] > div.ag-react-container > div{*}
+*     por .table-players .ag-center-cols-container .ag-row > div[col-id="full_name"] > div.ag-react-container > div{width: 100%;}
+*/
+
+/* Contest upcoming */
+.league-col {
+  min-width: 450px;
+}
+#page-torneios-lobby .main .league-col h2 {
+  margin-top: 0px;
+}
+.headerInfoStatsPerform {
+  background-color: white;
+  padding: 25px;
+}
+.tab-scroll ul {
+  margin: 20px 20px;
+  color: #404040;
+}
+.table tbody td:last-child {
+  padding-right: 0px;
+  text-align: center;
+}

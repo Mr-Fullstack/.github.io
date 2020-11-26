@@ -1,0 +1,451 @@
+.page-dashboard .next-turns-container .heading th:nth-child(2) {
+  width: 130px !important;
+}
+.page-dashboard .next-turns-container .heading th:nth-child(5) {
+  /* text-align: right; */
+  padding-right: 27px;
+}
+
+.page-dashboard .card-torneio.card-rodada .torneio-inicio {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 100px;
+  text-align: center;
+  padding: 0.5rem 9px;
+  z-index: 999;
+  min-width: 95px;
+  margin-top: -20px;
+}
+.next-turns > .row:nth-child(1) > .col-md-6:nth-child(2) > a {
+  padding: 1rem 0px;
+  text-transform: lowercase;
+}
+
+.page-dashboard .card-torneio.card-rodada {
+  height: 462px;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.card-rodada.disabled {
+  opacity: 0.2;
+}
+.card-rodada.disabled .btn {
+  pointer-events: none;
+}
+.card-rodada.disabled .torneio-inicio {
+  display: none;
+}
+
+.page-dashboard .next-turns {
+  margin-top: 0px;
+  background-color: transparent;
+}
+.page-dashboard .card-img-top .card-img.img-fluid,
+.page-dashboard .card-img-top > svg.card-img {
+  width: 35%;
+}
+
+.page-dashboard .card-rodada .card-img-icon {
+  width: 12%;
+  left: 4%;
+}
+.page-dashboard .card-rodada .premiacao strong {
+  position: relative;
+  margin: 0px;
+  font-size: 20px;
+  color: #fff;
+  background: #ffffff40;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+.page-dashboard .card-rodada .premios {
+  position: absolute;
+  top: 58%;
+}
+
+.page-dashboard .card-rodada a.btn {
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+  margin-top: 17px;
+  margin-bottom: -10px;
+}
+.page-dashboard .torneio-dados.rodada-dados {
+  height: 65px;
+  padding: 10px 15px 10px 10px;
+  position: absolute;
+  top: 23px;
+  right: 9px;
+}
+
+.page-dashboard .slider .msg-text {
+  width: 59%;
+  color: #666;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: lighter;
+  padding-top: 22%;
+}
+
+.page-dashboard .card-rodada .card-img-top {
+  height: 340px;
+}
+.page-dashboard .card-rodada .rodada-name {
+  width: auto;
+  min-width: 15ch;
+  font-size: 19px;
+  top: 65%;
+  line-height: 22px;
+}
+
+.page-dashboard .light-box-shadow.next-turns .list-control-sliders {
+  position: absolute;
+  top: 83%;
+  padding-left: 0px;
+}
+
+.page-dashboard .next-turns-container {
+  top: 0px;
+}
+/* .page-dashboard .tournaments .td-actions {
+  display: none;
+} */
+
+.page-dashboard .light-box-shadow.next-turns .list-control-sliders {
+  position: absolute;
+  top: 83%;
+  padding-left: 0px;
+}
+
+.page-dashboard .table:last-child {
+  padding: 14px;
+}
+
+.page-dashboard .next-turns-container {
+  top: 0px;
+}
+.page-dashboard .next-turns .slick-track {
+  padding-top: 4px;
+}
+.page-dashboard .club-box {
+  margin-top: 14px;
+}
+.page-dashboard .wide-table .table-scroll .td-entries strong {
+  font-weight: normal;
+}
+.page-dashboard .wide-table {
+  background-color: #ffffff;
+  position: relative;
+  min-height: auto;
+  text-align: center;
+}
+.call-to-tournaments,
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0px;
+  min-height: 400px;
+}
+.call-to-tournaments > img {
+  width: 95px;
+}
+.call-to-action > img {
+  width: 160px;
+}
+.call-to-tournaments > img + span,
+.call-to-action > img + span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ccc;
+  margin: 27px;
+  text-align: center;
+}
+
+.page-dashboard .card-rodada .card-img-top {
+  border-radius: 5px 5px 0px 0px;
+}
+.page-dashboard .card-rodada .card-img-top:after {
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  -webkit-clip-path: polygon(74% 0%, 100% 0%, 100% 100%, -1% 100%);
+  clip-path: polygon(74% 0%, 100% 0%, 100% 100%, -1% 100%);
+  border-radius: 0px 5px 0px 0px;
+}
+.page-dashboard .light-box-shadow .slick-list {
+  overflow-y: visible !important;
+}
+
+.page-dashboard .slick-next {
+  right: -2% !important;
+}
+.page-dashboard .slick-prev {
+  left: -2% !important;
+}
+.page-dashboard .slick-next,
+.page-dashboard .slick-prev {
+  color: #ccc;
+}
+.page-dashboard .slick-next:hover,
+.page-dashboard .slick-prev:hover {
+  color: #2f92f0;
+}
+/* coluna do club */
+
+.club-box {
+  border-radius: 13px 13px 7px 7px;
+  background: #fff;
+  background-size: cover;
+  background-position: right;
+  position: relative;
+  color: #181818;
+  min-height: 350px;
+  margin-bottom: 2rem;
+  padding-bottom: 15px;
+}
+
+.club-box::before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  right: 4px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.club-box .symbols-box .logo-box {
+  max-width: 90px;
+}
+.club-name {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333333;
+  background-color: white;
+}
+.club-avatar-header {
+  height: auto;
+  background-color: white;
+  height: 44px;
+  text-align: center;
+  padding: 12px 10px;
+  font-size: 14px;
+  border-radius: 13px 13px 0px 0px;
+  margin-top: 0px;
+  border-bottom: 3px solid #fafafa;
+}
+.symbols-box {
+  position: relative;
+  margin: 0px auto 20px;
+  width: 255px;
+  max-width: 300px;
+}
+.symbols-box .uniform-box {
+  width: 70%;
+}
+.symbols-box .uniform-box svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.club-box .symbols-box .logo-box {
+  z-index: 999;
+  position: absolute;
+  position: absolute;
+  right: 41px;
+  width: 28%;
+  top: 60%;
+}
+.page-dashboard .next-turns .slick-slide {
+  padding: 0px 16px;
+}
+.club-box-action {
+  margin-top: 20px;
+  text-align: center;
+  width: 80%;
+  margin: 0px auto;
+}
+.club-box-action .btn.btn-edit-off {
+  width: 100%;
+  margin: 5px 0px;
+}
+.club-box-action .btn.btn-edit-off:hover {
+  background: #2f92f0;
+  color: #fff;
+  border-color: #2f92f0;
+}
+
+.page-dashboard .my-turns .title {
+  padding: 0px;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', sans-serif;
+  height: 44px;
+  border-radius: 3px 3px 0px 0px;
+  margin-bottom: 0px;
+  margin-top: -3px;
+}
+
+.page-dashboard .card-body {
+  border-radius: 0px 0px 15px 15px;
+}
+@media (min-width: 769px) {
+  .page-dashboard table.tournaments .td-entries {
+    padding-right: 16px;
+  }
+  .page-dashboard table.tournaments .td-entry {
+    padding-right: 37px;
+  }
+}
+
+@media (max-width: 769px) {
+  .ptr--ptr ~ #wrapper .container {
+    overscroll-behavior-y: contain;
+    margin: 24px auto;
+  }
+
+  .page-dashboard .table:last-child {
+    padding: 0px;
+  }
+  .page-dashboard .next-turns-title,
+  .page-dashboard .turns-bottom {
+    background: transparent;
+  }
+
+  .page-dashboard .card.card-torneio {
+    height: 200px;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .page-dashboard .next-turns .slick-next,
+  .page-dashboard .next-turns .slick-prev {
+    opacity: 0;
+  }
+  .page-dashboard .light-box-shadow .slick-list {
+    overflow: hidden !important;
+  }
+  .club-box .uniform-area {
+    transform: scale(0.5);
+    top: -50px;
+  }
+  .club-box .symbols-box {
+    left: 0px;
+    height: 122px;
+    margin: 0px auto 0px;
+  }
+  .club-box .symbols-box .logo-box {
+    right: 89px;
+    width: 14%;
+    top: 53%;
+  }
+
+  .page-dashboard .col-sm-3 > .club-box,
+  .page-dashboard .col-sm-3 > .lobby-title {
+    display: none;
+  }
+  .club-box {
+    width: 300px;
+    margin: 0px auto;
+    min-height: 128px;
+    margin-bottom: 25px;
+  }
+
+  .club-box .uniform-box,
+  .club-box .club-info {
+    display: block;
+  }
+  .page-dashboard div#page-torneios-lobby .card-torneio:after {
+    content: unset !important;
+  }
+  .page-dashboard table.tournaments td.td-start-date > a {
+    left: 251px;
+    width: 69px;
+    z-index: 9999999;
+  }
+
+  .page-dashboard table.tournaments td.td-start-date > a.btn {
+    z-index: 999;
+  }
+
+  .page-dashboard table.tournaments td.td-start-date {
+    right: 0px;
+  }
+
+  /* 
+  .page-dashboard .tournaments .td-actions {
+    display: block;
+  }
+   */
+  .page-dashboard .torneio-dados.rodada-dados {
+    top: -180px;
+  }
+  .page-dashboard .card-rodada .card-img-top {
+    height: 200px;
+  }
+  .turns {
+    height: 352px;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+    display: flex;
+    scroll-snap-type: x mandatory;
+  }
+  .page-dashboard .card-img-top .card-img.img-fluid,
+  .page-dashboard .card-img-top > svg.card-img {
+    width: 22%;
+  }
+  .page-dashboard .card-rodada .rodada-name {
+    font-size: 12px;
+    text-align: center;
+    padding-left: 12%;
+    left: 45%;
+    max-width: 25ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .page-dashboard .card-rodada .card-body {
+    background: #fff;
+    white-space: normal;
+    height: 69%;
+  }
+
+  .page-dashboard .next-turns .slick-slider {
+    height: 373px;
+  }
+  .page-dashboard .next-turns .slick-list {
+    height: 100%;
+  }
+
+  .page-dashboard .card-body > a.btn:last-child {
+    margin-bottom: 10px;
+  }
+
+  .page-dashboard .card-torneio.card-rodada .premios {
+    position: absolute;
+    top: -28%;
+  }
+  .call-to-tournaments {
+    justify-content: start;
+  }
+  .lobby-title {
+    font-size: 16px !important;
+  }
+  .page-dashboard .next-turns {
+    margin-top: 4px;
+  }
+  .page-dashboard .next-turns > .row:nth-child(1) > .col-md-6:nth-child(2) > a {
+    padding: 1.29rem 0px;
+  }
+}
