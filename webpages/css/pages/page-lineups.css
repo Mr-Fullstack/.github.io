@@ -1,0 +1,3100 @@
+/* Estilos  - (  Página Criar / Editar Escalações ) - desktop  */
+
+/* estilo gerais desktop */
+
+.lineups-btn {
+  display: none;
+}
+
+.lineup-header {
+  top: 68px;
+  position: absolute;
+  font-weight: 100;
+  font-size: 13px !important;
+  width: 456px;
+  color: #949494;
+  left: 19px;
+  text-align: left;
+}
+
+.lineup-header img {
+  -webkit-filter: hue-rotate(-25deg);
+  filter: hue-rotate(-25deg);
+}
+
+.lineup-header .tooltip {
+  display: inline-block;
+}
+
+.lineup-header .tooltip:hover .tooltip-text {
+  top: -51px;
+  left: -15px;
+  font-weight: 600;
+  font-size: 12px !important;
+  min-width: 164px;
+  color: #000;
+  z-index: 99;
+  padding-top: 11px;
+}
+
+.lineup-header .tooltip .tooltip-text:after {
+  left: 43px;
+  top: 39px;
+  position: absolute;
+}
+
+.signup-lineup {
+  margin-left: 5px;
+}
+
+/*********************************************************/
+/*** PROPIEDADES EM COMUM (Desktop) 
+/*********************************************************/
+
+/*player item*/
+
+.player-item .player-action {
+  position: absolute;
+  display: none;
+  padding-top: 4px;
+  color: #000;
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  font-size: 8.5px;
+  border-radius: 100%;
+  line-height: 0;
+  z-index: 99999;
+  right: 18px;
+  top: 15px;
+  filter: drop-shadow(0px 0px 2px #000);
+}
+
+.player-item:hover .player-action {
+  display: inline-block;
+}
+
+.player-item .add-player {
+  background: url('../../images/plus.svg') no-repeat center center;
+  opacity: 0.8;
+  display: block;
+  height: 100%;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-size: 15%;
+  background-position-y: 35px;
+  background-position-x: 50%;
+}
+
+.player-item .add-player span {
+  display: none;
+}
+
+.player-item .add-player:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.player-item .info .team,
+.player-item .st,
+.player-item .info .pts,
+.player-item .pos {
+  display: none;
+}
+
+.page-lineup-list
+  .filter
+  > div:nth-child(4)
+  > .filter-select-wrapper
+  .filter-list
+  i {
+  top: unset;
+}
+/*
+###############################################################
+########## 1ª etapa - edição da escalações  (Desktop) ######### 
+###############################################################
+*/
+
+.page-lineup.page-lineup-list .button-box {
+  margin-top: 20px;
+}
+
+.page-lineup.page-lineup-list:not(.edit) .button-box a {
+  font-weight: normal;
+  font-size: 12px;
+  float: right;
+  margin-right: 42px;
+}
+
+.page-lineup.page-lineup-list .gridiron-list-holder {
+  margin-top: 1%;
+}
+
+.page-lineup.page-lineup-list .button-box a img {
+  margin-right: 4px;
+}
+
+.page-lineup-list .player-item .player-status {
+  display: none;
+}
+
+/*================================================================
+ .gridiron-list-holder ( lista de cards com escalações ) - desktop 
+==================================================================*/
+
+/* gridiron-list - desktop */
+.gridiron-list {
+  margin: 0px -15px;
+  overflow: hidden;
+  overflow-x: auto;
+  width: 100%;
+  -webkit-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  transition: all 0.8s;
+  padding-top: 16px;
+  min-height: 520px;
+  padding-bottom: 25px;
+}
+
+.gridiron-list::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.lineup-card {
+  margin: 40px 7px 97px;
+  position: relative;
+  /* width: 335px; */
+  width: 400px;
+  -webkit-box-shadow: 0px 23px 15px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 23px 15px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 23px 15px -4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 6px;
+  height: 350px;
+  /* margin-left: 0; */
+  transition: all 0.8s;
+  -webkit-scroll-snap-align: center;
+  scroll-snap-align: center;
+  display: inline-block;
+  text-align: center;
+}
+
+.lineup-card + .button-box .narrow {
+  width: auto;
+}
+.close-team {
+  position: absolute;
+  background: #d4d5d9;
+  width: 23px;
+  text-align: center;
+  height: 23px;
+  padding-top: 1px;
+  border-radius: 30px;
+  font-size: 11px;
+  top: 0;
+  color: #333;
+  font-weight: 700;
+  padding-top: 4px;
+  top: -10px;
+  left: 97%;
+  text-decoration: none !important;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* gridiron-heading  - desktop */
+.gridiron-heading {
+  padding: 12px 10px;
+  height: 115px;
+  background-color: white;
+  border-radius: 5px 5px 0px 0px;
+  font-weight: bold;
+  color: #818386;
+}
+
+.lineup-card.team-choose .gridiron-heading {
+  height: 75px;
+}
+
+.gridiron-heading > .lineup-header img {
+  margin-top: 2px;
+  width: 13px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.lineup-card.team-choose .gridiron-heading .holder > span {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.gridiron-heading .holder {
+  width: 100%;
+  margin-top: -52px;
+}
+
+.lineup-card.team-choose .gridiron-heading .holder {
+  margin-top: -22px;
+}
+
+.gridiron-heading .holder .ellipsis {
+  color: #6c6a6a;
+  font-size: 12px;
+}
+
+.gridiron-heading .holder > div {
+  color: #949494;
+  font-size: 14px;
+}
+
+.gridiron-heading .holder > div:last-child {
+  margin-left: auto;
+  margin-top: 31px;
+  text-align: center;
+}
+
+.gridiron-heading .holder > div.clearfix,
+.gridiron-heading .holder > div.ellipsis {
+  max-width: 65%;
+  line-height: 9px;
+  text-align: left;
+}
+
+.ellipsis {
+  width: 385px;
+}
+
+.gridiron-heading .team {
+  color: #333333;
+  display: block;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.lineup-team-points {
+  float: right;
+  margin: 17px 0px 0px 10px;
+  width: 150px;
+}
+
+.live-points {
+  font-weight: 100;
+  font-size: 11px;
+}
+
+.live-points-content {
+  font-size: 17px;
+}
+
+.live-points-start {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.lineup-card .btn-enter-lineup {
+  position: absolute;
+  height: 26px;
+  font-size: 11px;
+  right: 20px;
+  width: 114px;
+  z-index: 5;
+  line-height: 1;
+  top: 61px;
+  background: #2c90ef;
+  color: #fff;
+}
+
+.gridiron-heading .league-flag {
+  margin-right: 5px;
+  width: 30px;
+}
+
+.lineup-card .lineup-team-points .btn-live {
+  left: -12px;
+  background-color: transparent;
+  color: #d16564;
+  left: -8px;
+  width: 92px;
+}
+
+.lineup-card .btn-grid-top,
+.lineup-card .btn-grid-bottom {
+  left: 10px !important;
+  right: 15px;
+  top: 45px;
+}
+
+.lineup-card .btn-grid-top {
+  position: absolute;
+  top: 105px;
+  left: 30px;
+  width: 61px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  z-index: 99;
+  border-radius: 101px;
+  display: block;
+  padding: 8px 3px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+.lineup-card .btn-grid-bottom {
+  top: auto;
+  bottom: 20px;
+}
+.btn-grid-top i {
+  font-size: 9px;
+  margin: 0px 5px 0px 0px;
+}
+/* field-block - desktop*/
+.lineup-card .field-block,
+.gridiron-sm .field-block {
+  margin: 0px 0px 5px;
+}
+
+.field-block {
+  padding: 0px;
+  position: relative;
+  margin: 0px 0px 8px;
+  height: 100%;
+}
+
+.field-block .formation,
+.field-block button.btn {
+  display: none;
+}
+.lineup-card .field-block {
+  margin-top: -20px;
+}
+
+/* gridiron - desktop */
+
+.gridiron-wrap {
+  width: 100%;
+  padding-top: 91.8%;
+  position: relative;
+  left: 0px;
+  height: auto;
+  -webkit-filter: drop-shadow(16px 20px 15px #777);
+  filter: drop-shadow(16px 20px 15px #777);
+}
+
+.gridiron-list .gridiron-wrap {
+  -webkit-filter: none;
+  filter: none;
+}
+
+.gridiron {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 120%;
+  height: 100%;
+  background: url(../../images/field.png);
+  background-size: 107%;
+  padding: 16px 9px 9px;
+  background-repeat: no-repeat;
+  background-position: 39% 53%;
+  -webkit-filter: hue-rotate(-10deg);
+  filter: hue-rotate(-10deg);
+  z-index: 2;
+}
+
+.lineup-card .gridiron,
+.gridiron-sm .gridiron {
+  background-size: 247% 108%;
+  background-position: 49% 1px;
+  width: 100%;
+  height: 100%;
+  padding-right: 16px;
+  -webkit-filter: hue-rotate(-5deg);
+  filter: hue-rotate(-5deg);
+  border-radius: 0px 0px 7px 7px;
+  background-color: #ecedf0;
+}
+
+/*position line - desktop */
+.position-line {
+  padding: 20px 0px 0px;
+  width: 100%;
+  height: 23%;
+  position: relative;
+  left: 34px;
+  bottom: 55px;
+}
+.create-wrap .position-line {
+  padding: 20px 0px 0px;
+  width: 100%;
+  height: 21%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0px;
+  bottom: 80px !important;
+}
+
+.gridiron-sm .position-line,
+.lineup-card .position-line {
+  padding: 10px 0px 0px;
+  left: 0px;
+  bottom: 0px;
+  margin-top: 9px;
+  top: 15px;
+}
+
+.position-line > div {
+  margin: 0px 6px;
+  width: 21%;
+  height: 100%;
+  z-index: 999;
+}
+
+.player-item {
+  position: relative;
+  text-align: center;
+}
+
+.page-lineup.list-edit .create-wrap .player-item img {
+  max-width: 8vh;
+  width: 11vh;
+}
+.player-item .info .team,
+.player-item .st,
+.player-item .info .pts,
+.player-item .pos {
+  display: none;
+}
+
+.player-item.default {
+  background: url('../../images/uniform-default.png') no-repeat center center;
+  background-size: 59%;
+  background-position: 50% 4px;
+}
+
+.player-selected {
+  background: transparent !important;
+}
+
+.player-item img {
+  position: relative;
+  max-width: 70px;
+  margin-top: 30px;
+  top: -29px;
+}
+
+.lineup-card .player-item img {
+  max-width: 56px !important;
+  display: inline-block;
+}
+
+.player-item .player-name {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  min-width: 15%;
+  min-height: auto;
+  background-color: #322a2a;
+  font-size: 9.5px;
+  top: -44px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  padding-left: 3px;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0px;
+  overflow: hidden;
+}
+.page-lineup-list .create-wrap .player-item .player-name {
+  padding: 2px;
+  min-width: 53%;
+  top: -72px;
+}
+
+/* 
+.page-lineup-list .create-wrap .player-item .player-name{
+  height: 19px;
+  min-height: 14px;
+  width: 85px;
+  min-width: 18.7ch;
+} */
+
+.lineup-card .player-item .player-name {
+  display: inline;
+  overflow: hidden;
+  max-width: 100% !important;
+  padding: 1px;
+  min-width: 15% !important;
+  min-height: auto;
+}
+
+.player-item .player-name > span:nth-child(1) {
+  line-height: 1;
+  min-width: 3ch;
+  max-width: 12ch;
+  display: inline-block;
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px 5px;
+}
+.page-lineup-list .create-wrap .player-item .player-name > span:nth-child(1) {
+  margin-right: 12px;
+  max-width: 14ch;
+  padding: 1px 5px;
+}
+/* ORDENAÇÃO JOGADORES EM CAMPO - CARDS DA ESCALAÇÕES */
+.lineup-card .position-line > div {
+  margin: 0px 10px;
+}
+
+/*altura das linhas padrão */
+.lineup-card .position-line.fw {
+  top: -5%;
+}
+
+.lineup-card .position-line.md {
+  top: -3%;
+}
+.lineup-card .position-line.df {
+  top: 0%;
+}
+
+.lineup-card .position-line.gk {
+  top: 2%;
+}
+
+/* linhas de 5 jogadores na defesa  */
+
+.lineup-card .position-line.order-5.df {
+  margin-top: 18px;
+}
+
+.lineup-card .position-line.order-5.df > div:nth-child(2),
+.lineup-card .position-line.order-5.df > div:nth-child(3),
+.lineup-card .position-line.order-5.df > div:nth-child(4) {
+  margin-top: 5%;
+}
+
+.lineup-card .position-line.order-5.df > div:last-child,
+.lineup-card .position-line.order-5.df > div:first-child {
+  top: -40%;
+  position: absolute;
+}
+.lineup-card .position-line.order-5.df > div:first-child {
+  left: -2%;
+}
+.lineup-card .position-line.order-5.df > div:last-child {
+  right: -2%;
+}
+
+/* linhas de 5 jogadores no meio campo  */
+.lineup-card .position-line.order-5.md {
+  top: -10%;
+}
+
+.lineup-card .position-line.order-5.md ~ .position-line.df {
+  top: 5%;
+}
+.lineup-card .position-line.order-5.md > div:nth-child(2),
+.lineup-card .position-line.order-5.md > div:nth-child(4) {
+  position: absolute;
+  top: 80%;
+}
+.lineup-card .position-line.order-5.md > div {
+  margin: 0px 31px;
+}
+.lineup-card .position-line.order-5.md > div:nth-child(2) {
+  left: 9%;
+}
+
+.lineup-card .position-line.order-5.md > div:nth-child(4) {
+  right: 9%;
+}
+
+/* linhas com  4 jogadores no meio campo com 5 na defesa (5-4-1)  */
+
+.lineup-card .position-line.order-4 > div:last-child,
+.lineup-card .position-line.order-4 > div:first-child {
+  position: absolute;
+  top: -25%;
+}
+.lineup-card .position-line.order-4 > div:first-child {
+  left: -1%;
+}
+
+.lineup-card .position-line.order-4 > div:last-child {
+  right: -1%;
+}
+.lineup-card .position-line.order-4 > div:nth-child(2),
+.lineup-card .position-line.order-4 > div:nth-child(3) {
+  margin: 0px 5%;
+}
+/*
+###############################################################
+########## 2ª etapa - edição da escalações  (Desktop) ######### 
+###############################################################
+*/
+
+.page-lineup .section-page h2 {
+  margin-top: 50px;
+  font-size: 20px;
+  position: relative;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 0px;
+  top: -4px;
+  letter-spacing: 0.5px;
+}
+
+.page-lineup .section-page h5 {
+  margin-top: 0px;
+  font-size: 11px;
+  color: #797d7d;
+  font-weight: normal;
+}
+
+/*================================
+    seleção da rodada - desktop
+==================================*/
+.row.rodadas {
+  position: relative;
+  padding-top: 16px;
+}
+
+.row.rodadas .input-holder.bottom-list-players {
+  position: absolute;
+  right: 44px;
+  width: 315px;
+}
+
+.row.rodadas .input-holder.bottom-list-players .btn {
+  height: 40px !important;
+  padding: 4px !important;
+  width: 150px;
+  font-weight: 600;
+}
+.row.rodadas .input-holder.bottom-list-players .btn.btn-gray {
+  color: #fff;
+}
+
+.page-lineup .selecionar-rodadas .card.card-rodada {
+  max-width: 100%;
+  min-width: 300px;
+  width: 27.3439%;
+  height: 275px;
+  cursor: pointer;
+  margin: 1% 2%;
+  scroll-snap-align: center;
+}
+
+.selecionar-rodadas .row.rodadas .list-control-sliders {
+  position: absolute;
+  padding-left: 0px;
+  opacity: 0;
+  margin: -10px auto;
+}
+
+.selecionar-rodadas .card-img-top {
+  border-top: 0px transparent;
+}
+.selecionar-rodadas .card-img-top {
+  height: 192px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.rodada-horario {
+  font-size: 13.5px;
+  color: #333333;
+}
+
+/*
+###############################################################
+########## 3ª etapa - edição da escalações  (Desktop) ######### 
+###############################################################
+*/
+.round-info-box {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+.round-info-box > .btn {
+  height: 46px;
+}
+.page-lineup-list .ag-root-wrapper-body.ag-layout-normal {
+  height: inherit;
+}
+.sub-alt-header {
+  display: none;
+}
+.page-lineup-list .gridiron-list .player-item .player-name {
+}
+.page-lineup-list .create-wrap .player-item .player-status {
+  display: inline-block;
+}
+
+.page-lineup .main h2 a img {
+  width: 20px;
+  margin-left: 9px;
+  margin-top: -1px;
+}
+
+.page-lineup-list.edit .main h2 a img {
+  display: none;
+}
+.page-contest.page-lineup-list.edit .main h2 a img {
+  display: inline-block;
+}
+
+/*================================
+    1ª coluna de informações
+==================================*/
+
+.page-lineup.page-lineup-list .info-block .timer {
+  display: none;
+}
+
+.info-gridiron span,
+.info-gridiron .col-xs-6.col-md-6 a {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 14px;
+}
+
+.page-lineup.page-lineup-list .main .league-col span {
+  top: 0px;
+  left: 1px;
+}
+
+/*select-wrapper  -  novo componente criado usado somente no pagina de escalaçoes*/
+
+.select-wrapper {
+  border: 0.5px solid #c2c1c1;
+  border-radius: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.select-icon {
+  width: 13px;
+  height: 26px;
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: 1px 5px, 1px 7px;
+  right: 23px;
+  position: absolute;
+  top: 25px;
+  filter: opacity(0.4);
+  z-index: 1;
+}
+
+.page-lineup-list .lineup-block .select-wrapper > select.form-control {
+  width: 100%;
+  padding-left: 20px;
+  color: #000;
+  font-weight: bold;
+  background: transparent;
+  z-index: 9;
+  height: 43px;
+  font-size: 14px;
+  border: none;
+}
+.page-lineup-list .lineup-block .select-wrapper > select.form-control option {
+  color: #818386;
+}
+
+/*### campo com jogadores  (Desktop) #### */
+
+.page-lineup-list .info-block + .field-block .gridiron {
+  left: -15%;
+}
+
+.page-lineup-list .info-gridiron .btn-gray {
+  margin-left: -55px;
+}
+
+.page-lineup-list .info-gridiron .row .col-md-6:first-child {
+  text-align: left;
+}
+
+.page-lineup-list .info-gridiron .row .col-md-6:last-child {
+  text-align: right;
+}
+
+/* ORDENAÇÃO JOGADORES EM CAMPO  */
+
+.page-lineup-list.edit .position-line[class*='order-'] > div:first-child,
+.page-lineup-list.edit .position-line[class*='order-'] > div:last-child {
+  position: absolute;
+}
+/*reset inicial em linhas que não precisa de reorganização*/
+.page-lineup-list .create-wrap .position-line.order-2 > div:first-child,
+.page-lineup-list .create-wrap .position-line.order-2 > div:last-child,
+.page-lineup-list .create-wrap .position-line.order-3 > div:first-child,
+.page-lineup-list .create-wrap .position-line.order-3 > div:last-child,
+.page-lineup-list .create-wrap .position-line.order-1 > div:first-child,
+.page-lineup-list .create-wrap .position-line.order-1 > div:last-child {
+  position: relative;
+}
+
+/* altura da linha com 4 / 3 jogadores na formação padrão */
+
+.page-lineup-list .create-wrap .position-line.fw {
+  height: 25%;
+}
+.page-lineup-list .create-wrap .position-line.df {
+  height: 22%;
+}
+
+.page-lineup-list .create-wrap .position-line.md {
+  height: 28%;
+}
+.page-lineup-list .create-wrap .position-line.gk {
+  height: 15%;
+}
+.page-lineup-list .create-wrap .position-line.gk .player-item.default {
+  height: 100px;
+}
+
+/*ordernação em linha com 5 jogadores defesa */
+.page-lineup-list .create-wrap .position-line.df.order-5 > div:nth-child(2),
+.page-lineup-list .create-wrap .position-line.df.order-5 > div:nth-child(3),
+.page-lineup-list .create-wrap .position-line.df.order-5 > div:nth-child(4) {
+  margin: 0px 5.5px !important;
+  top: 83px;
+  margin: 0px 8px !important;
+}
+
+.page-lineup-list .create-wrap .position-line.df.order-5 {
+  height: 25%;
+  top: -146px;
+  margin: 4px auto;
+}
+.page-lineup-list .create-wrap .position-line.df.order-5 > div:first-child,
+.page-lineup-list .create-wrap .position-line.df.order-5 > div:last-child {
+  top: 30% !important;
+}
+.page-lineup-list .create-wrap .position-line.df.order-5 > div:first-child {
+  right: 4% !important;
+}
+.page-lineup-list .create-wrap .position-line.df.order-5 > div:last-child {
+  left: 4% !important;
+}
+.page-lineup-list .player-item .player-points,
+.page-lineup-list .player-item .player-value {
+  top: -33px;
+  width: auto !important;
+  min-width: 18px;
+  max-width: 60px;
+  display: table;
+}
+.page-lineup-list .create-wrap .position-line.order > .player-item.default {
+  width: 105.48px;
+  height: 79.46px;
+}
+
+/*ordernação em linha com 5 jogadores defesa com 4 meias (5-4-1)*/
+.page-lineup-list .create-wrap .position-line > div {
+  width: 18%;
+}
+
+.page-lineup-list .create-wrap .position-line.md.order-4 {
+  height: 34%;
+  margin-top: -43px;
+}
+.page-lineup-list .create-wrap .position-line.md.order-4 > div {
+  /* reset formação padrao order */
+  position: absolute;
+}
+
+.page-lineup-list .create-wrap .position-line.md.order-4 > div:first-child {
+  left: 75px;
+}
+.page-lineup-list .create-wrap .position-line.md.order-4 > div:last-child {
+  right: 75px;
+}
+.page-lineup-list .create-wrap .position-line.md.order-4 > div:nth-child(2),
+.page-lineup-list .create-wrap .position-line.md.order-4 > div:nth-child(3) {
+  top: 51px;
+}
+
+.page-lineup-list .create-wrap .position-line.md.order-4 > div:nth-child(2) {
+  left: 175px;
+}
+.page-lineup-list .create-wrap .position-line.md.order-4 > div:nth-child(3) {
+  right: 175px;
+}
+
+/* reset linhas com 4 jogadores quando formação 3-4-3 , 4-4-2 , 4-5-1 */
+.page-lineup-list
+  .create-wrap
+  .position-line.fw.order-3
+  + .position-line.md[class*='order-4'],
+.page-lineup-list
+  .create-wrap
+  .position-line.fw.order-2
+  + .position-line.md[class*='order-4'] {
+  top: -56px;
+}
+.page-lineup-list
+  .create-wrap
+  .position-line.fw.order-3
+  + .position-line.md[class*='order-4']
+  > div,
+.page-lineup-list
+  .create-wrap
+  .position-line.fw.order-2
+  + .position-line.md[class*='order-4']
+  > div,
+.page-lineup-list
+  .create-wrap
+  .position-line.md.order-5
+  + .position-line.df[class*='order-4']
+  > div,
+.page-lineup-list
+  .create-wrap
+  .position-line.md.order-3
+  + .position-line.df[class*='order-4']
+  > div,
+.page-lineup-list
+  .create-wrap
+  .position-line.fw.order-2
+  + .position-line.md[class*='order-4']
+  + .position-line.df[class*='order-4']
+  > div {
+  position: relative;
+  left: unset;
+  right: unset;
+  top: unset;
+}
+.page-lineup-list
+  .create-wrap
+  .position-line.fw.order-3
+  + .position-line.md[class*='order-4'],
+.page-lineup-list
+  .create-wrap
+  .position-line.fw.order-2
+  + .position-line.md[class*='order-4'] {
+  margin-top: -30px;
+}
+
+/*ordernação em linha com 5 jogadores meia*/
+
+.page-lineup-list .create-wrap .position-line.md.order-5 {
+  margin-top: 0px;
+  height: 33%;
+}
+.page-lineup-list .create-wrap .position-line.md.order-5 > div:first-child,
+.page-lineup-list .create-wrap .position-line.md.order-5 > div:last-child {
+  top: 48% !important;
+}
+
+.page-lineup-list
+  .create-wrap
+  .position-line.md.order-5
+  > div:not(:first-child),
+.page-lineup-list
+  .create-wrap
+  .position-line.md.order-5
+  > div:not(:last-child) {
+  top: -22px;
+}
+
+/* .page-lineup-list .create-wrap .position-line.md.order-5 > div:nth-child(2),
+  .page-lineup-list .create-wrap .position-line.md.order-5 > div:nth-child(4) {
+    top: 26px;
+  } */
+
+.page-lineup-list .create-wrap .position-line.order-5 > div:not(:first-child),
+.page-lineup-list .create-wrap .position-line.order-5 > div:not(:last-child) {
+  margin: 0px 25.5px !important;
+  top: 38px;
+}
+
+.page-lineup-list .create-wrap .position-line.md.order-5 > div:first-child {
+  right: 22% !important;
+}
+.page-lineup-list .create-wrap .position-line.md.order-5 > div:last-child {
+  left: 22% !important;
+}
+
+/*================================
+    2ª coluna de informações (Desktop)
+==================================*/
+
+/*  filter e  filter-select-wrapper -  novo componente criado usado somente no pagina de escalaçoes */
+
+.player-popup-open.filter-open .filter-wrapper .filter-block .filter {
+  display: block;
+}
+
+.filter-select-wrapper {
+  width: 155px;
+  max-width: 100%;
+  height: 35px;
+  background: #fff;
+  -webkit-filter: drop-shadow(2px 4px 6px #ccc);
+  filter: drop-shadow(2px 4px 6px #ccc);
+  border-radius: 10px;
+  position: relative;
+  z-index: 999999999;
+}
+
+/*filtro salario mobile tela escalações*/
+.filter-select-wrapper.salary {
+  width: 80%;
+  right: 17px;
+  top: -9px;
+  float: right;
+}
+.filter-select-wrapper.salary .filter-list a:hover:after {
+  color: #fff;
+}
+.filter-select-wrapper.salary #show-filter-list {
+  top: 36%;
+}
+.filter-select-wrapper.salary .filter-selected {
+  left: 0px;
+  width: 100%;
+  padding-left: 1px;
+}
+.filter-select-wrapper.salary .filter-selected,
+.filter-select-wrapper.salary .filter-selected a {
+  display: flex;
+  align-items: center;
+}
+.filter-select-wrapper.salary .filter-list {
+  top: 51px;
+  border-radius: 13px;
+  -webkit-filter: drop-shadow(2px 4px 3px #ccc);
+  filter: drop-shadow(2px 4px 3px #ccc);
+}
+.filter-select-wrapper.salary .filter-list a {
+  font-size: 15px;
+  float: unset;
+  padding-right: 30px;
+}
+.filter-select-wrapper.salary .sort-link:after {
+  position: absolute;
+  right: 16px;
+}
+
+.filter-wrap .filter-block {
+  display: none;
+}
+
+.filter-select-wrapper.standard {
+  background: transparent;
+  border: 0.5px solid #c2c1c1;
+  border-radius: 100px;
+  min-width: 140px;
+  height: 45px;
+  text-align: center;
+  padding: 13px;
+  display: inline-block;
+  filter: unset;
+  -webkit-filter: unset;
+  z-index: 9999;
+}
+
+.filter-select-wrapper .filter-selected {
+  left: 15px;
+  top: 9px;
+  position: absolute;
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.filter-select-wrapper.standard .filter-selected {
+  font-size: 12px;
+  left: -3px;
+  top: 13px;
+}
+
+.filter-select-wrapper.standard .filter-selected .sort-link:after {
+  content: '\f107';
+  right: -7px;
+  position: absolute;
+  top: 2px;
+}
+
+.filter-select-wrapper .filter-list {
+  justify-content: space-between;
+  flex-direction: column;
+  background: #fff;
+  top: 34px;
+  border-radius: 10px;
+  position: absolute;
+  min-width: 100%;
+  height: auto;
+  overflow: hidden;
+  left: 1px;
+  -webkit-filter: drop-shadow(2px 4px 3px #ccc);
+  filter: drop-shadow(2px 4px 3px #ccc);
+  animation: menu-selectdown 0.4s ease-in-out;
+  display: none;
+}
+
+.filter-select-wrapper > .filter-list.visible {
+  display: block;
+}
+/* .filter-select-wrapper > #show-filter-list:checked:not(:focus) ~ .filter-list:not(:hover){
+   display: none;
+ }  */
+.filter-select-wrapper > #show-filter-list:checked ~ .filter-list {
+  top: 42px;
+}
+.filter-select-wrapper .filter-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.filter-select-wrapper .filter-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0px 0px 20px 0px #d0d0d0;
+  box-shadow: inset 0px 0px 20px 0px #d0d0d0;
+}
+
+.filter-select-wrapper .filter-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 15px 10px 5px #ebeaec00;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 20px 0px #d0d0d0;
+}
+
+.filter-select-wrapper .filter-list a {
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  height: 25px;
+  color: #000;
+  font-size: 11px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.filter-select-wrapper #show-filter-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: -1%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.filter-select-wrapper i {
+  position: absolute;
+  right: 9px;
+  top: 12px;
+}
+
+.filter-select-wrapper .filter-list li {
+  width: 100%;
+}
+
+.filter-select-wrapper .filter-list li button {
+  border: none;
+  cursor: pointer;
+  padding: 0px 5px;
+  width: 100%;
+  background: transparent;
+  text-align: left;
+  padding-left: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin: 0px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.filter-select-wrapper .filter-list .position-list {
+  margin: 10px 0px;
+}
+
+.filter-select-wrapper .filter-list li button.checked-button:hover,
+.filter-select-wrapper .filter-list li button.checked-button,
+.filter-select-wrapper .filter-list li button.selected,
+.filter-select-wrapper .filter-list li button.selected:hover,
+.filter-select-wrapper .filter-list a:hover {
+  background: #2f92f0;
+  color: #fff;
+}
+
+.filter-select-wrapper .filter-list li button:hover {
+  background: #cccccc38;
+  color: #2f92f0;
+}
+
+.filter-select-wrapper .filter-list .team-list {
+  margin: 0px;
+  width: 300px;
+}
+
+.filter-select-wrapper .filter-list .team-list button {
+  padding: 7px 5px;
+  padding-left: 12px;
+  text-align: center;
+}
+
+.team-list .versus {
+  font-size: 19px;
+  color: #000;
+  width: auto;
+  text-shadow: 1px 1px #ffffff;
+  opacity: 0.5;
+  padding: 0px 5px;
+}
+
+.team-list div:hover .versus {
+  opacity: 1;
+}
+
+.team-list li > div {
+  display: flex;
+  align-items: center;
+}
+
+/* tabela de jogadores  Desktop*/
+.page-lineup-list
+  .table-players
+  .ag-center-cols-container
+  .ag-row
+  > div.td-pts {
+  font-size: 16px !important;
+  font-weight: normal;
+  color: #505050;
+}
+.page-lineup-list
+  .table-players
+  .ag-center-cols-container
+  .ag-row
+  > .td-custom-data {
+  /*remover depois que arivan atualiza o html*/
+  display: none !important;
+}
+.page-lineup-list .ag-header-viewport {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  display: none;
+}
+.page-lineup-list
+  .table-players
+  .ag-center-cols-container
+  .ag-row
+  > div.td-actions {
+  width: 45px !important;
+}
+.page-lineup-list
+  .table-players
+  .ag-center-cols-container
+  .ag-row
+  > div.td-actions
+  a.btn {
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  background-color: #2c90ef;
+  border-radius: 100px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+}
+.page-lineup-list
+  .table-players
+  .ag-center-cols-container
+  .ag-row
+  > div.td-actions
+  a.btn
+  i {
+  display: none;
+}
+.page-lineup.page-lineup-list
+  .table-players
+  .ag-center-cols-container
+  .ag-row
+  > div.td-actions
+  > div.ag-react-container
+  > div.td-holder {
+  height: 53px;
+}
+.page-lineup-list .ag-theme-fresh .ag-row .td-st {
+  width: 34px !important;
+}
+.page-lineup-list .ag-theme-fresh .ag-row .td-st img {
+  width: 15px;
+}
+
+.page-lineup-list .ag-theme-fresh .ag-row .td-pts,
+.page-lineup-list .ag-theme-fresh .ag-row .td-salary {
+  width: 150px !important;
+}
+
+.page-lineup-list
+  .table-players
+  .ag-center-cols-container
+  .ag-row
+  > div[col-id='match_name'] {
+  width: 280px !important;
+  height: 67px;
+}
+.ag-row > div[col-id='match_name'] div.ag-react-container {
+  position: relative;
+}
+.page-lineup-list .badge-position-li,
+.page-lineup-list .badge-position-li-bold {
+  border: 0.5px solid #e7ecf0;
+}
+
+.page-lineup-list div > .badge-position-li-bold:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.page-lineup-list div > .badge-position-li-bold:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.page-lineup-list .badge-position-li {
+  background: #fff;
+}
+
+.page-lineup-list .badge-position-li-bold,
+.page-lineup-list div > .badge-position-li-bold:last-child {
+  background: #e7ecf0;
+  border-radius: 3px;
+  color: #3a3b3c;
+  font-weight: bold;
+}
+
+.page-lineup-list
+  .table-players
+  .ag-center-cols-container
+  .ag-row
+  > div[col-id='match_name']
+  span.name
+  a {
+  text-overflow: ellipsis;
+  width: 17ch;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+.page-lineup-list
+  .table-players
+  .ag-center-cols-container
+  .ag-row
+  > div[col-id='match_name']
+  span.name
+  .player-status {
+  /* right: auto;
+    left: 104%;
+    top:0px;*/
+  padding: 2px 2px;
+  vertical-align: inherit;
+  margin-left: 3px;
+}
+.page-lineup-list
+  .ag-theme-fresh
+  .ag-row
+  .td-name
+  > .ag-react-container
+  > span:first-child {
+  background: #f1f1f1e0; /*#d4d4d4e0; */ /*#d6d3d3;*/
+  border-radius: 100px;
+  padding: 0.1rem;
+  overflow: hidden;
+  display: block;
+  height: 45px;
+  box-shadow: 0px 0px 4px #dcd9d9 /*#969595*/;
+  position: inherit;
+  min-width: 44px;
+  margin: 0px 8px;
+}
+
+.page-lineup-list .table-scroll {
+  overflow: hidden;
+}
+
+.page-lineup-list .search-field {
+  width: 100%;
+  border-radius: 100px;
+  margin: 18px 13px;
+  height: 50px;
+  overflow: visible;
+}
+
+.page-lineup-list .search-field img.search-icon {
+  position: absolute;
+  top: 25px;
+  left: 13px;
+}
+
+.page-lineup-list .search-field .form-control {
+  background: #f8f8f8;
+  color: #1e2735;
+  font-size: 14px;
+  border-radius: 100px;
+  border: 0px;
+  width: 240px;
+}
+
+.page-lineup-list .lineup-block .table-players {
+  height: 445px !important;
+  min-height: 445px !important ;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: -31px;
+}
+
+.page-lineup-list .search-field .sort-order .sort-link {
+  width: 122px;
+  text-align: center;
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.page-lineup-list .search-field .sort-order .sort-link:nth-child(2) {
+  /*remover depois de ariivan atualizar html*/
+  /* display: none; */
+  width: 0px;
+  height: 0px;
+  overflow: visible;
+  color: #fff;
+  position: relative;
+}
+
+.page-lineup-list .search-field .sort-order .sort-link:nth-child(2)::after {
+  /*remover depois de ariivan atualizar html*/
+  position: absolute;
+  top: -8px;
+  left: -11px;
+}
+
+.page-lineup-list .search-field .sort-order .filter-select-wrapper.standard {
+  margin-right: 16px;
+}
+.page-lineup-list .search-field .sort-order .sort-link:nth-child(3) {
+  width: 40px;
+  margin-left: 15px;
+}
+
+.page-lineup-list .search-field .sort-order {
+  position: absolute;
+  right: 110px;
+  top: 9px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 226px;
+  overflow: visible;
+}
+.sort-order .filter-select-wrapper strong {
+  margin: 12px 0px;
+  display: inline-block;
+}
+.sort-order .filter-select-wrapper .filter-list a {
+  font-weight: normal;
+}
+/*********************************************************/
+/***** PROPIEDADES FLEX EM COMUM NO GERAL  - Desktop *****/
+/*********************************************************/
+
+/* display : flex */
+.gridiron,
+.gridiron-list,
+.position-line,
+.gridiron-heading,
+.gridiron-heading .holder,
+.lineup-card .btn-enter-lineup,
+.row.rodadas .input-holder.bottom-list-players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/*===========================
+      align-items (Desktop)
+============================*/
+
+/* align-items - center */
+.gridiron-heading,
+.gridiron-heading .holder,
+.lineup-card .btn-enter-lineup {
+  -webkit-box-align: center;
+  -ms-flex-item-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/*===========================
+   justify-content (Desktop)
+============================*/
+
+/* justify-content - center */
+.position-line,
+.gridiron-list {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* justify-content - start */
+
+/* justify-content - space-between */
+.gridiron-heading,
+.row.rodadas .input-holder.bottom-list-players {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: distribute;
+  -ms-flex-line-pack: distribute;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+/* justify-content - space-around */
+.lineup-card .btn-enter-lineup {
+  -webkit-box-pack: justify;
+  -ms-flex-line-pack: distribute;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+/* justify-content - flex-end */
+.gridiron {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -ms-flex-line-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+/*===========================
+     flex-wrap (Desktop)
+============================*/
+
+/*  flex-wrap - wrap */
+.gridiron-list {
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/*===========================
+     flex-direction (Desktop)
+============================*/
+
+/* flex-direction - column */
+.gridiron {
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* Estilos  - (  Página Criar / Editar Escalações ) - mobile  */
+
+/***************************** max-width: 1199px **********************************/
+@media (max-width: 1199px) {
+  /*########## 1ª etapa - edição da escalações  (Mobile) ######### */
+
+  .page-lineup.page-lineup-list .button-box a {
+    margin-right: 10px;
+  }
+
+  /*gridiron-list - mobile */
+  .lineup-card {
+    width: 341px;
+    margin-bottom: 60px;
+    height: 441px;
+  }
+  .lineup-card.team-choose {
+    width: 320px;
+    height: 340px;
+  }
+
+  .team-choose .gridiron-wrap {
+    height: 100%;
+  }
+  .choose-lineups:not(.edit) {
+    max-width: 100% !important;
+    min-width: 500px;
+  }
+  .create-wrap .player-item img {
+    max-width: 56px !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .page-lineup-list.edit .create-wrap .position-line {
+    height: 22% !important;
+  }
+}
+/***************************** max-width: 769px **********************************/
+
+@media (max-width: 769px) {
+  /* correção exclusiva parte de escolha da posiçao dos jogadores */
+
+  .page-lineup-list
+    .ag-theme-fresh
+    .ag-row
+    .td-name
+    > .ag-react-container
+    > span:first-child {
+    position: absolute;
+    left: 1px;
+  }
+  .page-lineup-list .main h2 a img {
+    width: 21px;
+    margin-top: 3px;
+    padding-right: -4px;
+    position: absolute;
+    right: 6px;
+    top: 7px;
+    padding-top: calc(constant(safe-area-inset-top));
+    padding-top: calc(env(safe-area-inset-top));
+  }
+
+  .page-lineup.page-lineup-list.edit #header {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    display: none;
+  }
+
+  .page-lineup.page-lineup-list .lineup-block .heading {
+    position: fixed;
+    width: 100vw;
+    left: -0px;
+    min-height: calc(100vh - 94vh);
+    height: auto;
+    top: 0px;
+    z-index: 9999;
+    /* background: #202c40; */
+    background: #1f2b3e;
+    /* background: linear-gradient(90deg, #202c40 0%, #2a3b55 100%); */
+    text-align: center;
+    margin-bottom: 0px !important;
+    padding-top: 20px;
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+  }
+
+  /* novo estilo mobile do .heading  criar / editar escalações */
+
+  .lineup-block .heading {
+    display: block;
+    margin: 0px;
+  }
+
+  .page-lineup.page-lineup-list .lineup-block .league-col .league-icon {
+    display: none;
+  }
+
+  .page-lineup.page-lineup-list .back,
+  .page-lineup.page-lineup-list .heading .btn-back {
+    position: absolute;
+    left: 9px;
+    color: #fff;
+    top: 7px;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .lineup-block .heading > div:first-child {
+    min-width: 100%;
+  }
+  .page-lineup.page-lineup-list .main h2 {
+    margin-bottom: 0px !important;
+  }
+
+  .page-lineup.page-lineup-list.edit .league-col span,
+  .page-lineup.page-lineup-list.edit .main h2 {
+    font-size: 14px;
+    position: inherit;
+    color: #fff;
+  }
+  .filter-open .choose-player-popup > div:last-child {
+    display: none;
+  }
+  .page-lineup.page-lineup-list .main .filter-wrap h2 {
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    font-size: 24px;
+    position: absolute;
+    top: 14px;
+    left: 38%;
+  }
+  .filter-select-wrapper .filter-list .team-list {
+    width: 100%;
+  }
+  .page-lineup.page-lineup-list .info-block {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 6px #eeeeee;
+    position: fixed;
+    top: calc(100vh - 94vh);
+    z-index: 999;
+    min-height: calc(100vh - 94vh);
+    height: auto;
+    width: 100vw;
+    left: 0px;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-top: calc(100vh - 94vh);
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .page-lineup.page-lineup-list .info-block .total-budget .budget,
+  .page-lineup.page-lineup-list .info-block .price-player .price {
+    font-size: 14px !important;
+    margin-top: 0px;
+  }
+  .page-lineup.page-lineup-list .info-block .price-player {
+    margin-left: 0px;
+  }
+
+  .page-lineup.page-lineup-list .info-block .price-player,
+  .page-lineup.page-lineup-list .info-block .total-budget,
+  .page-lineup.page-lineup-list .info-block .timer {
+    width: 100%;
+    text-align: center;
+  }
+  .page-lineup.page-lineup-list .info-block .timer .timer-content {
+    padding: 15px 0px;
+  }
+  .page-lineup.page-lineup-list .info-block .price-player,
+  .page-lineup.page-lineup-list .info-block .total-budget {
+    font-size: 10px;
+  }
+  .page-lineup.page-lineup-list .info-block .timer .timer-info span {
+    color: #2c90ef;
+    font-size: 20px;
+  }
+  .page-lineup.page-lineup-list .info-block .timer .timer-info {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .page-lineup.page-lineup-list .info-block .timer,
+  #page-torneios-lobby .page-lineup.page-lineup-list .info-block .timer {
+    display: block !important;
+  }
+  .page-lineup.page-lineup-list .heading .timer {
+    display: none;
+  }
+
+  .page-lineup.page-lineup-list .heading .round-info-box > .btn {
+    position: absolute;
+    top: 50px;
+    right: 12px;
+    height: 42px;
+    display: none;
+  }
+
+  .page-lineup-list.edit .info-gridiron .btn-gray {
+    margin-left: 0px;
+  }
+  .page-lineup.page-lineup-list .lineup-block .btn-holder {
+    margin-top: 92px;
+    padding: 0px;
+  }
+  .page-lineup.page-lineup-list .team-label,
+  .page-lineup.page-lineup-list .lineup-block .input-holder .form-control {
+    display: none;
+  }
+
+  .page-lineup.page-lineup-list .select-wrapper,
+  .page-lineup.page-lineup-list .heading .round-info-box > .btn {
+    background: #f9f9f9;
+  }
+  .page-lineup.page-lineup-list .info-block .formation {
+    /* position: absolute;
+      left: 2px;
+      top: 60px; */
+    display: none;
+  }
+  .select-icon {
+    top: 4px;
+  }
+
+  .page-lineup.page-lineup-list .info-block .formation h3 {
+    display: none;
+  }
+
+  /*########## 1ª etapa - edição da escalações  (Mobile) max-width: 769px ######### */
+
+  /*gridiron-list - mobile */
+  .lineup-card {
+    width: 341px;
+    max-width: 95%;
+    height: 440px;
+    margin: 15px auto;
+    padding: 0px;
+  }
+
+  .slick-slider .lineup-card {
+    max-width: 100%;
+  }
+  .gridiron-list {
+    overflow: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+  }
+  .lineup-card + .button-box {
+    margin-top: 45px;
+  }
+  .gridiron-list .field-block {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    margin-top: -20px;
+  }
+
+  .page-lineup.page-lineup-list .timer-info {
+    width: 100%;
+  }
+
+  .page-lineup.page-lineup-list .info-gridiron span {
+    white-space: nowrap;
+  }
+
+  .page-lineup.page-lineup-list .info-gridiron span,
+  .page-lineup.page-lineup-list .info-gridiron .text-decoration-none {
+    margin-top: -20px;
+  }
+  .page-lineup.page-lineup-list .timer {
+    height: 44px;
+  }
+
+  .page-lineup.page-lineup-list .btn-details-league img {
+    margin-right: 2px;
+  }
+  .page-lineup.page-lineup-list .gridiron-list-holder {
+    width: 100%;
+    /* position: absolute;
+  left: 0; */
+    margin-top: 0px;
+  }
+
+  .page-lineup.page-lineup-list .info-block > div > h3 {
+    width: 9ch;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .page-lineup.page-lineup-list .list-control-sliders {
+    display: flex;
+  }
+
+  .lineup-card .position-line div {
+    width: 23%;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .page-lineup .btn-grid-top i {
+    font-size: 11px;
+  }
+
+  .page-lineup .gridiron-list .btn-grid-top {
+    font-size: 10px;
+  }
+
+  /*########## 2ª etapa - edição da escalações  (Mobile) max-width: 769px ######### */
+  .page-lineup .section-page {
+    padding-left: 15px;
+  }
+
+  .bottom-list-players {
+    padding-right: 25px;
+  }
+
+  /*########## 3ª etapa - edição da escalações  (Mobile) max-width: 769px ######### */
+
+  .page-lineup-list .table-scroll .search-field .form-control {
+    display: none;
+  }
+  .search-icon {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+  }
+
+  .page-lineup-list .info-gridiron .btn-gray {
+    margin-left: 0px;
+  }
+  .page-lineup.page-lineup-list .lineup-block .btn-holder .btn {
+    position: absolute;
+    right: 3%;
+    top: 74.4%;
+    padding: 8px 9px;
+  }
+  .page-lineup-list .info-gridiron .row .col-md-6:last-child {
+    margin-top: 9%;
+  }
+  .page-lineup.page-lineup-list .lineup-block .heading > div {
+    margin: 3px 0px 0px;
+  }
+
+  /* campo com jogadores  max-width: 769px*/
+
+  .page-lineup.page-lineup-list .create-wrap .player-item:hover .remove-player {
+    opacity: 1;
+    top: 2px;
+    right: 5px;
+  }
+  .page-lineup.page-lineup-list .create-wrap .gridiron-wrap {
+    padding-top: 70%;
+  }
+  .page-lineup-list .info-block + .field-block .gridiron {
+    left: 0%;
+    width: 100%;
+  }
+  .page-lineup.page-lineup-list .create-wrap .field-block {
+    transform: perspective(400px);
+    top: 137px;
+  }
+
+  .page-lineup.page-lineup-list .create-wrap .field-block > .formation,
+  .page-lineup.page-lineup-list .create-wrap .field-block > button.btn {
+    position: absolute;
+    top: -90px;
+    display: block;
+  }
+
+  .page-lineup.page-lineup-list .field-block > button.btn {
+    right: 6px;
+    top: -90px;
+    width: 94px;
+  }
+
+  .page-lineup.page-lineup-list .field-block > .formation > .select-wrapper {
+    height: 38px;
+    padding-top: 0px;
+  }
+
+  .page-lineup.page-lineup-list .field-block > .formation > .select-icon {
+    top: 2px;
+    right: 12px;
+  }
+
+  .page-lineup.page-lineup-list .info-gridiron {
+    margin-top: 15% !important;
+  }
+
+  .page-lineup-list.edit .position-line.df.order > div:nth-child(2),
+  .page-lineup-list.edit .position-line.df.order > div:nth-child(3),
+  .page-lineup-list.edit .position-line.df.order > div:nth-child(4) {
+    margin: 0px 8px !important;
+  }
+
+  .page-lineup.page-lineup-list .player-item .player-action {
+    display: inline-block;
+    right: 36px;
+    top: 4px;
+  }
+
+  /* estilo principal novo design tabela jogadores Ag-Grid pagina Criar / Editar Escalações   */
+
+  .page-lineup-list .sub-alt-header {
+    display: block;
+    width: 100%;
+    background: #fff;
+    /* height: 51px; */
+    box-shadow: 2px 2px 5px #eeeeee;
+    overflow: visible;
+  }
+  .page-lineup-list .sub-alt-header > .row,
+  .page-lineup-list .sub-alt-header > .row > div {
+    overflow: visible !important;
+  }
+  .page-lineup-list .search-field .sort-order {
+    top: 0px;
+  }
+  .page-lineup-list .search-field {
+    margin: 0px;
+    margin-left: -10%;
+  }
+  .page-lineup-list .create-wrap > .choose-player-popup {
+    padding: 0px;
+    padding-left: 0px !important;
+    /* padding-top: 0px !important;
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+  background: #1f2b3e;  */
+    /* height: 100% !important; */
+    overflow-x: hidden;
+  }
+  .page-lineup-list .lineup-block .table-players {
+    height: inherit !important;
+    margin-top: 10px !important;
+  }
+  .player-popup-open > body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .page-lineup-list .table-players .ag-center-cols-container {
+    width: 98% !important;
+    padding: 1px 0%;
+    height: 90% !important;
+    position: absolute;
+  }
+
+  .ag-root.ag-unselectable .ag-layout-normal,
+  .page-lineup-list .table-players .ag-center-cols-container {
+    -webkit-overflow-scrolling: touch;
+  }
+  .page-lineup-list .ag-root.ag-unselectable .ag-layout-normal {
+    margin-top: 0px;
+  }
+  .page-lineup-list .ag-body-viewport .ag-center-cols-clipper {
+    min-height: 100px !important;
+  }
+  .page-lineup-list #players .ag-header {
+    position: fixed;
+    display: none;
+  }
+
+  .page-lineup.page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-actions {
+    left: 83% !important;
+    position: absolute;
+  }
+
+  .page-lineup.page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-actions
+    > div.ag-react-container
+    > div.td-holder {
+    width: 72%;
+  }
+
+  .page-lineup-list
+    #players
+    .ag-center-cols-container
+    .ag-row
+    > .td-name
+    .team-name
+    .name {
+    width: auto;
+    max-width: 21ch;
+    position: relative;
+    overflow: visible;
+  }
+  .page-lineup-list
+    #players
+    .ag-center-cols-container
+    .ag-row
+    > .td-name
+    .team-name
+    .name
+    img {
+    width: 12px;
+    margin-left: 3px;
+  }
+  .page-lineup-list .table-players .ag-center-cols-container .ag-row {
+    width: 380px;
+    max-width: 100%;
+    height: 67px !important;
+    margin: 0px 1%;
+  }
+
+  /*td-pts*/
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pts {
+    width: 70px !important;
+  }
+
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pts
+    > .ag-react-container
+    > div
+    > strong {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-salary {
+    text-align: center;
+    white-space: initial;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+  }
+
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pts,
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-salary {
+    position: absolute;
+    width: 60px !important;
+    height: auto;
+    left: 52% !important;
+    overflow: visible;
+    top: 30px;
+  }
+
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-salary {
+    left: 68% !important;
+  }
+
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-salary
+    > .ag-react-container
+    > div
+    > .mob-title,
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pts
+    > .ag-react-container
+    > div
+    > .mob-title {
+    font-size: 13px;
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 22px;
+  }
+  .page-lineup-list .table-players .btn-icon.active span {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-salary
+    > .ag-react-container
+    > div
+    > .mob-title {
+    width: 2.9ch;
+    white-space: pre;
+    overflow: hidden;
+  }
+
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div[col-id='match_name']
+    .ag-react-container
+    > div {
+    /* margin-top: -25px; */
+    line-height: 1;
+    position: absolute;
+    left: 61px;
+    top: 5px;
+  }
+
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos {
+    position: absolute;
+    left: 61px !important;
+    width: auto !important;
+    top: 39px;
+    height: auto;
+    text-align: left;
+    z-index: 99999;
+  }
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos
+    > .ag-react-container
+    > div {
+    display: flex;
+    justify-content: flex-start;
+    width: 68px;
+  }
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos
+    > .ag-react-container
+    > div
+    > .badge-position-li-bold,
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos
+    > .ag-react-container
+    > div
+    > a {
+    width: 50%;
+    border: 0.5px solid #e7ecf0;
+  }
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos
+    > .ag-react-container
+    > div
+    > a
+    > span.badge-position-li {
+    padding-left: -5%;
+    width: 100%;
+    padding: 0px;
+    display: inline-block;
+    text-align: center;
+    left: 0px;
+    border: none;
+    line-height: 20px;
+  }
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos
+    > .ag-react-container
+    > div
+    > .badge-position-li-bold {
+    font-size: 12px;
+  }
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos
+    > .ag-react-container
+    > div
+    > a {
+    height: 22px;
+  }
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos
+    > .ag-react-container
+    > div
+    > a:first-child {
+    border-radius: 5px 0px 0px 5px !important;
+    margin-left: 0px;
+  }
+
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos
+    > .ag-react-container
+    > div
+    > .badge-position-li-bold:last-child,
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos
+    > .ag-react-container
+    > div
+    > a:last-child {
+    border-radius: 0px 5px 5px 0px;
+  }
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos
+    > .ag-react-container
+    > div
+    > .badge-position-li-bold:first-child:last-child {
+    border-radius: 5px;
+  }
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pos
+    > .ag-react-container
+    > div
+    > .badge-position-li-bold:first-child:not(:last-child) {
+    border-radius: 5px 0px 0px 5px !important;
+  }
+
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pts
+    > .ag-react-container
+    > div,
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-pts
+    > .ag-react-container
+    > div
+    > strong,
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-salary
+    > .ag-react-container
+    > div {
+    white-space: pre-line;
+    width: 8ch;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .alt-header > .row > .col-xs-8 {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .page-lineup-list .lineup-block .alt-header .budget,
+  .page-lineup-list .lineup-block .alt-header .price {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .page-lineup-list .lineup-block .alt-header .price {
+    font-weight: lighter;
+    margin-right: 18px;
+  }
+
+  .page-lineup-list .sort-order > .sort-link {
+    display: none;
+  }
+  .search-field .sort-order {
+    right: unset;
+    left: 0px;
+    top: 0px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .filter-select-wrapper.standard {
+    height: 34px;
+    overflow: visible;
+  }
+  .filter-select-wrapper.standard .filter-selected .sort-link {
+    width: 141px;
+  }
+  .page-lineup-list .filter-select-wrapper.standard .filter-selected {
+    font-size: 12px;
+    left: -1px;
+    top: -7px;
+  }
+
+  .page-lineup-list
+    .filter-select-wrapper.standard
+    .filter-selected
+    .sort-link::after {
+    top: 15px;
+    right: 9px;
+  }
+
+  .alt-header .btn-back {
+    padding-left: 15px;
+  }
+
+  .page-lineup-list .sub-alt-header .btn-filter {
+    color: #2c90ef;
+    font-size: 16px;
+    float: left;
+    width: auto;
+    padding: 15px;
+    padding-left: 25px;
+  }
+  .page-lineup-list .sub-alt-header .sort-link {
+    float: right;
+    padding: 15px;
+    padding-right: 25px;
+  }
+  .page-lineup-list .sort-link.sort-down::after,
+  .page-lineup-list .sub-alt-header .sort-link:after,
+  .page-lineup-list .sub-alt-header .sort-link.salary-down:after,
+  .page-lineup-list .sub-alt-header .sort-link.average-down:after {
+    content: '\f063';
+  }
+  .page-lineup-list .sort-link.sort-up::after,
+  .page-lineup-list .sub-alt-header .sort-link.salary-up:after,
+  .page-lineup-list .sub-alt-header .sort-link.average-up:after {
+    content: '\f062';
+  }
+
+  .page-lineup-list .lineup-block .alt-header .search {
+    padding: 10px;
+    font-size: 20px;
+    position: sticky;
+  }
+
+  .page-lineup-list .lineup-block .alt-header .budget {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+  }
+
+  .page-lineup-list .lineup-block .alt-header .budget:after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 70%;
+    position: absolute;
+    border: 0.1px solid #fff;
+    left: 108%;
+    bottom: 4px;
+  }
+
+  .player-popup-open .page-lineup-list .filter {
+    display: none;
+    position: absolute;
+  }
+  .player-popup-open.filter-open .filter-wrap .filter-select-wrapper {
+    height: 100%;
+    margin-bottom: 55px;
+  }
+
+  .player-popup-open.filter-open .filter-wrap .filter-block .filter {
+    display: block;
+    position: relative;
+  }
+  .player-popup-open.filter-open
+    .filter-wrap
+    .filter-block
+    .filter
+    .filter-select-wrapper
+    .filter-list {
+    position: relative;
+    margin-top: 4px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .player-popup-open.filter-open .filter-wrap .filter-block .filter .col-xs-6 {
+    text-align: center;
+    width: 100%;
+  }
+  /* .player-popup-open.filter-open .filter-wrap .filter-block .filter .col-xs-6:nth-child(1) > .filter-select-wrapper{
+      margin-bottom: 57%;
+    }
+    .player-popup-open.filter-open .filter-wrap .filter-block .filter .col-xs-6:nth-child(2) > .filter-select-wrapper{
+      margin-bottom: 50%;
+    }
+    .player-popup-open.filter-open .filter-wrap .filter-block .filter .col-xs-6:nth-child(3) > .filter-select-wrapper{
+      margin-bottom: 100%;
+    } */
+
+  .filter-select-wrapper {
+    border-radius: 0px;
+    width: 100%;
+    display: inline-block;
+    -webkit-filter: unset;
+    filter: unset;
+    height: 35px;
+    background: transparent;
+  }
+  .filter-select-wrapper .filter-selected {
+    font-size: 15px;
+  }
+  .filter-wrap .close-holder {
+    top: 6px;
+    /* right: 72px; */
+  }
+
+  .filter-wrap .filter-select-wrapper .filter-list {
+    display: block;
+  }
+
+  .player-popup-open.filter-open .create-wrap .filter-block,
+  .player-popup-open.filter-open .filter-wrap {
+    background: #f9f9f9;
+  }
+  .player-popup-open.filter-open .create-wrap .filter-block {
+    padding: 0px;
+    border: 0px;
+    text-align: center;
+    display: block;
+  }
+  .player-popup-open.filter-open .create-wrap .filter-block i {
+    opacity: 0;
+  }
+
+  .player-popup-open.filter-open .create-wrap .filter-block .btn-confirmar {
+    width: 80%;
+  }
+  .filter-select-wrapper .filter-list .salary-slider {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .filter-select-wrapper .filter-list {
+    border-radius: 0px;
+    -webkit-filter: drop-shadow(0px 0px 0px #777);
+    filter: drop-shadow(0px 0px 0px #777);
+  }
+  .sort-order .filter-select-wrapper .filter-list {
+    border-radius: 10px;
+    -webkit-filter: drop-shadow(2px 4px 3px #ccc);
+    filter: drop-shadow(2px 4px 3px #ccc);
+  }
+  /* ativando controle do search  escalaçoes mobile */
+  .search #check-search {
+    position: absolute;
+    opacity: 0;
+  }
+  .search #check-search ~ label {
+    font-size: 22px;
+  }
+  .search #check-search ~ label.check-search > i:nth-child(2) {
+    display: none;
+  }
+  .search #check-search:checked ~ label.check-search > i:nth-child(2) {
+    display: inline;
+  }
+  .search #check-search:checked ~ label.check-search > i:nth-child(1) {
+    display: none;
+  }
+  .search #check-search:checked ~ label + .search-field {
+    left: -385%;
+  }
+  .page-lineup-list .lineup-block .alt-header .search .search-field {
+    left: 100%;
+    position: absolute;
+    top: -4px;
+    height: 20px;
+    z-index: 9999;
+    transition: all 0.5s;
+  }
+
+  .page-lineup-list .search-field .form-control {
+    padding: 10px;
+    border-radius: 5px !important;
+    height: 31px;
+    margin-top: 12px;
+    /* width: 70%; */
+    padding-left: 32px;
+  }
+  .page-lineup-list.edit .search-field img.search-icon {
+    left: 13px;
+    top: 20px;
+  }
+  .page-lineup-list
+    #players
+    .ag-center-cols-container
+    .ag-row
+    > div[col-id='injury_status'] {
+    /* width: 12px !important;
+    padding: 0rem ;
+    position: absolute;
+    left: 189px !important;
+    top: 11px;
+    height: auto; */
+    display: none;
+  }
+  .page-lineup-list #players .search-field {
+    display: none;
+  }
+
+  .page-lineup-list .search-field .sort-order {
+    width: 100%;
+  }
+  .page-lineup-list #players .search-field > img,
+  .page-lineup-list #players .search-field > input {
+    display: none;
+  }
+  .filter-open.games-filter-open .page-lineup-list .filter-wrap {
+    width: 48%;
+    z-index: 99999;
+  }
+  .filter-open.games-filter-open
+    .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row {
+    width: 350px;
+    margin-left: 50%;
+  }
+  /* correção scroll lista de jogadores pagina escalações parte -3 */
+  .lineup-block .budget-holder {
+    display: none;
+  }
+  .page-lineup-list .list-players {
+    /* position: fixed; */
+    height: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px !important;
+    top: 6px !important;
+    top: calc(51px + constant(safe-area-inset-top)) !important;
+    top: calc(51px + env(safe-area-inset-top)) !important;
+    border-radius: 0;
+  }
+  /* .page-lineup-list .table-scroll{
+     height: 100%;
+  }  
+  */
+
+  /***** PROPIEDADES FLEX EM COMUM NO GERAL  - Mobile max-width: 769px *****/
+
+  /*======================================
+ justify-content (Mobile) max-width: 769px
+========================================*/
+
+  /*  justify-content: start */
+  .gridiron-list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+  }
+
+  /*======================================
+  align-items (Mobile) max-width: 769px
+========================================*/
+
+  /* align-items: center */
+
+  /*======================================
+flex-direction (Mobile) max-width: 769px
+========================================*/
+  /* flex-direction - row */
+  .gridiron-list {
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 569px) {
+  /*########## 1ª etapa - edição da escalações  (Mobile) max-width: 569px ######### */
+
+  .page-lineup.page .mb20 {
+    padding: 0px !important;
+  }
+  .lineup-card .gridiron {
+    -webkit-transform: scale(0.999);
+    transform: scale(0.999);
+    left: 0%;
+    padding-right: 0px;
+  }
+
+  /* gridiron-list - mobile  max-width: 569px */
+  .lineup-card .position-line .player-item .player-name {
+    left: -3px;
+    min-width: 70px !important;
+  }
+  .lineup-card .position-line {
+    left: -4px;
+  }
+  .lineup-card .position-line > div.player-item {
+    margin: 0px 0px;
+  }
+
+  .create-wrap .position-line {
+    left: -26%;
+    top: -12%;
+    transform: scale(0.6);
+    width: 150%;
+    height: 24%;
+  }
+
+  /* ordernação formação padrão jogadores em campo */
+
+  /* 5 jogadores no meio campo (4-5-1) */
+  .lineup-card .position-line.order.md ~ .position-line.df {
+    top: 10%;
+  }
+  .lineup-card .position-line.order.md > div {
+    margin: 0px 23px;
+  }
+
+  .lineup-card .position-line.order.md > div:nth-child(2) {
+    left: 12%;
+  }
+  .lineup-card .position-line.order.md > div:nth-child(4) {
+    right: 12%;
+  }
+  .lineup-card .position-line.order.md > div:nth-child(2),
+  .lineup-card .position-line.order.md > div:nth-child(4) {
+    position: absolute;
+    top: 92%;
+  }
+  /* 5 jogadores na defesa */
+
+  .lineup-card .position-line.order.df > div:first-child {
+    left: 0%;
+  }
+  .lineup-card .position-line.order.df > div:last-child {
+    right: 0%;
+  }
+  .lineup-card .position-line.order.df > div:last-child,
+  .lineup-card .position-line.order.df > div:first-child {
+    top: -47%;
+    position: absolute;
+  }
+
+  .lineup-card .field-block {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+  .lineup-card .btn-grid-top {
+    top: 106px;
+  }
+
+  .page-lineup .gridiron-list .btn-grid-top {
+    display: block;
+    padding: 9px 6px;
+  }
+
+  .lineup-card {
+    margin: 0px auto;
+    margin-right: 4vw;
+  }
+  .slick-slider .lineup-card {
+    margin-left: 0px;
+  }
+  .lineup-card .player-item img {
+    max-width: 52px !important;
+  }
+
+  /*########## 2ª etapa - edição da escalações  (Mobile) max-width: 569px ######### */
+
+  .page-lineup-list #players .search-field {
+    margin-left: 28%;
+  }
+  .page-lineup .bottom-list-players {
+    text-align: center !important;
+  }
+  /*########## 3ª etapa - edição da escalações  (Mobile) max-width: 569px ######### */
+
+  .page-lineup.page-lineup-list .lineup-block .btn-holder {
+    margin-top: 130px;
+  }
+  .page-lineup.page-lineup-list .lineup-block .btn-holder .btn {
+    right: 0%;
+    top: 37.4%;
+  }
+
+  .filter-open.games-filter-open .page-lineup-list .filter-wrap {
+    width: 100%;
+  }
+  .filter-open.games-filter-open
+    .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row {
+    margin-left: 0%;
+  }
+
+  /*campo com joadores*/
+  .page-lineup.page-lineup-list .player-item .player-action {
+    right: 8px;
+  }
+  .page-lineup.page-lineup-list.edit .field-block {
+    top: 135px;
+  }
+  .page-lineup.page-lineup-list.edit .lineup-card .field-block {
+    top: 0px;
+  }
+  .page-lineup.page-lineup-list .info-gridiron {
+    margin-top: 46% !important;
+  }
+
+  .page-lineup-list .info-gridiron .row .col-md-6:last-child {
+    margin-top: 0%;
+  }
+
+  .page-lineup-list .create-wrap .player-item .player-name {
+    padding-left: 0px;
+  }
+  .page-lineup-list .create-wrap .player-item .player-name > span:nth-child(1) {
+    margin-right: 12px;
+    max-width: 12ch;
+  }
+
+  .page-lineup-list .create-wrap .player-item img {
+    height: 18.8vw !important;
+    /* height: 57px !important; */
+    max-width: 37vw !important;
+  }
+
+  /* ordenação jogadores campo padrão etapa 3 Escalação */
+
+  .page-lineup-list .create-wrap .position-line {
+    left: -25.5%;
+  }
+  .page-lineup-list .create-wrap .position-line.fw {
+    top: -23%;
+  }
+  .page-lineup-list .create-wrap .position-line.md {
+    top: -30%;
+    margin-top: 7%;
+  }
+  .page-lineup-list .create-wrap .position-line.df {
+    top: -16%;
+    margin-top: -4%;
+  }
+  .page-lineup-list .create-wrap .position-line.gk {
+    top: -11%;
+  }
+
+  /* ordernação quando 5 jogadores no meio campo    */
+  .page-lineup-list .create-wrap .position-line.md.order-5 {
+    margin-top: 4%;
+    top: -25%;
+  }
+  .page-lineup-list .create-wrap .position-line.md.order-5 > div:first-child,
+  .page-lineup-list .create-wrap .position-line.md.order-5 > div:last-child {
+    top: 67% !important;
+  }
+  .page-lineup-list .create-wrap .position-line.md.order-5 + .position-line.df {
+    top: -16%;
+  }
+
+  /* ordernação quando 5 jogadores na defesa  569px */
+  .page-lineup-list .create-wrap .position-line.df.order-5 {
+    top: -35%;
+    margin-top: -6.5%;
+  }
+  .page-lineup-list .create-wrap .position-line.df.order-5 > div:nth-child(2),
+  .page-lineup-list .create-wrap .position-line.df.order-5 > div:nth-child(3),
+  .page-lineup-list .create-wrap .position-line.df.order-5 > div:nth-child(4) {
+    top: 91px;
+  }
+  .page-lineup-list .create-wrap .position-line.df.order-5 > div:first-child,
+  .page-lineup-list .create-wrap .position-line.df.order-5 > div:last-child {
+    top: 85% !important;
+  }
+
+  /* ordernação quando 5 jogadores na defesa e 4 no meio de campo (5-4-1)*/
+  .page-lineup-list .create-wrap .position-line.md.order-4 {
+    top: -38%;
+  }
+  .page-lineup-list
+    .create-wrap
+    .position-line.fw.order-3
+    + .position-line.md[class*='order-4'],
+  .page-lineup-list
+    .create-wrap
+    .position-line.fw.order-2
+    + .position-line.md[class*='order-4'],
+  .page-lineup-list .create-wrap .position-line.md.order-4 {
+    margin-top: 3.5%;
+  }
+  .page-lineup-list .create-wrap .position-line.md.order-4 > div:nth-child(2) {
+    left: 30%;
+  }
+  .page-lineup-list .create-wrap .position-line.md.order-4 > div:nth-child(3) {
+    right: 30%;
+  }
+  .page-lineup-list .create-wrap .position-line.md.order-4 > div:nth-child(2),
+  .page-lineup-list .create-wrap .position-line.md.order-4 > div:nth-child(3) {
+    top: 71px;
+  }
+
+  /* tabela jogadores ag-grid */
+  .page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div[col-id='match_name']
+    span.name
+    a {
+    width: auto;
+    max-width: 18ch;
+  }
+
+  /***** PROPIEDADES FLEX EM COMUM NO GERAL  - Mobile max-width: 569px *****/
+
+  /*======================================
+ flex-wrap (Mobile) max-width:  569px
+========================================*/
+  /*  flex-wrap - nowrap*/
+  .gridiron-list {
+    -ms-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .page-lineup.page-lineup-list
+    .table-players
+    .ag-center-cols-container
+    .ag-row
+    > div.td-actions {
+    left: 83% !important;
+    position: absolute;
+  }
+
+  /* .page-lineup-list .create-wrap .player-item .player-value{
+    width: auto;
+    max-width: 48px;
+    min-width: 5ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+ */
+}
+
+@media (max-width: 375px) {
+  /* #### ajuste formação jogadores #### */
+  /* formação padrão */
+
+  .page-lineup-list .create-wrap .position-line.fw {
+    top: -24%;
+  }
+  .page-lineup-list .create-wrap .position-line.md {
+    top: -35%;
+    margin-top: 7%;
+  }
+
+  .page-lineup-list .create-wrap .position-line.df {
+    top: -22%;
+    margin-top: -4%;
+  }
+
+  .page-lineup-list .create-wrap .position-line.gk {
+    top: -17%;
+  }
+
+  .page-lineup-list .create-wrap .position-line {
+    left: -26.5%;
+  }
+
+  /* formação 5 jogadores na defesa */
+  .page-lineup-list .create-wrap .position-line.df.order-5 {
+    top: -44%;
+    margin-top: -3.5%;
+  }
+
+  /* formação 5 jogadores na defesa  e 4 no meio de campo*/
+
+  /*formarção 5 jogadores no meio de campo*/
+
+  .page-lineup-list .create-wrap .position-line.md.order-5 {
+    margin-top: 7%;
+    top: -29%;
+  }
+  .page-lineup-list .create-wrap .position-line.md.order-5 + .position-line.df {
+    top: -21%;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-lineup-list .player-item .player-value {
+    width: 69% !important;
+  }
+  /* formação padrão jogadores  */
+
+  .page-lineup-list .create-wrap .position-line.fw {
+    top: -28%;
+  }
+  .page-lineup-list .create-wrap .position-line.md {
+    top: -34%;
+  }
+  .page-lineup-list .create-wrap .position-line.df {
+    top: -20%;
+  }
+  .page-lineup-list .create-wrap .position-line.gk {
+    top: -17%;
+  }
+
+  /* formação  5 jogadores no meio de campo */
+  .page-lineup-list.edit .create-wrap .position-line.md.order {
+    margin-top: 3.8%;
+    top: -28%;
+  }
+  .page-lineup-list.edit .position-line.md.order > div:first-child,
+  .page-lineup-list.edit .position-line.md.order > div:last-child {
+    top: 83% !important;
+  }
+  .page-lineup-list.edit
+    .create-wrap
+    .position-line.md.order-5
+    + .position-line.df {
+    top: -20%;
+  }
+  /* formação  5 jogadores na defesa */
+  .page-lineup-list.edit .create-wrap .position-line.df.order-5 {
+    margin-top: -3.8%;
+    top: -47%;
+  }
+
+  .page-lineup-list .table-players .ag-center-cols-container .ag-row {
+    max-width: 98%;
+    margin: 0px 1%;
+  }
+}

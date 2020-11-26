@@ -1,0 +1,2974 @@
+/* Estilos  - (  Central de Jogos ) */
+.page-contest-come .hub-bar .question {
+  opacity: 0;
+}
+
+.page-contest-come #wrapper {
+  background: url('../../images/torcida.png'), url('../../images/field2.png'),
+    url('../../images/bg-live.png') #1d293c !important;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat !important;
+  background-position: 42vw 937px, 14vw 484px, 0px 0px !important;
+  background-size: 58vw auto, 115vw 42%, 100% 112% !important;
+}
+
+.page-contest-come #wrapper .w2 {
+  background: transparent !important;
+}
+
+.page-contest-come .container {
+  margin: 0px auto;
+}
+
+.page-contest-come .badge-position-li-bold {
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+
+.page-contest-come .table {
+  border-spacing: 0 4px;
+}
+
+.page-contest-come .match {
+  font-weight: normal;
+  font-size: 11px;
+  width: 16ch;
+  color: #9c9c9c;
+  text-align: left;
+}
+
+.page-contest-come .match b {
+  color: #404040;
+}
+
+.page-contest-come .td-media {
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #c5bfc1;
+}
+
+.page-contest-come .match div {
+  color: #a5a5a5;
+}
+
+.page-contest-come .lineup-block {
+  font-size: 9.2px;
+  color: #25282c;
+  line-height: 17px;
+  font-weight: 600;
+  margin-top: 75px;
+}
+
+.page-contest-come .btn-secondary {
+  width: 27.3px;
+  height: 100%;
+  background: linear-gradient(90deg, #d4d5d9 0%, #d4d5d9 100%);
+  box-shadow: unset;
+}
+
+.page-contest-come .heading.lineup-header-content,
+.page-contest-come .lineup-block .info-block,
+.page-contest-come #footer,
+.page-contest-come .btn.btn-filter {
+  display: none;
+}
+
+.page-contest-come .gridiron-box-shadow {
+  display: none;
+}
+.page-contest-come .header-pts {
+  width: auto;
+}
+
+.page-contest-come .table .td-points,
+.page-contest-come .td-position {
+  text-align: center;
+}
+
+.page-contest-come .player-pos {
+  margin-right: 0px;
+  width: 8ch !important;
+}
+
+/* tabs-horizontal da pÃ¡gina .page-contest  ( Central de Jogos )  */
+
+.page-contest-come .tabs-horizontal .tabs-chk {
+  width: 122px;
+}
+
+.page-contest-come .tabs-horizontal .tabs-chk span {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+.page-contest-come .tabs-horizontal .tabs-chk span,
+.page-contest-come .tabs-horizontal .active .tabs-chk span {
+  padding: 1rem;
+}
+
+.page-contest-come .tabs-horizontal .tabs-chk img {
+  display: none;
+}
+
+/* table-heading */
+
+.page-contest-come .table-heading {
+  height: 30px;
+}
+
+.page-contest-come .table-heading .filter {
+  width: 42%;
+  right: 42px;
+  position: absolute;
+  top: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+.page-contest-come .table-heading .filter > :last-child {
+  padding-left: 29px;
+}
+
+/* .search-field */
+
+.page-contest-come .search-field {
+  position: absolute;
+  left: 16px;
+  top: 28px;
+  width: 245px;
+  height: 30px;
+  border-radius: 100px;
+  z-index: 99;
+  background: #f8f8f8;
+}
+
+.page-contest-come .search-field i {
+  color: #777;
+  position: absolute;
+  top: 9px;
+  left: 16px;
+  font-size: 12px;
+}
+
+.page-contest-come .search-field .search-icon {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  height: 11px;
+}
+
+.page-contest-come .search-field .form-control {
+  margin-top: -11px !important;
+  font-size: 12px;
+  width: 100%;
+  border: none;
+  background: transparent;
+}
+
+.page-contest-come .lobby-table.width-all {
+  overflow: hidden;
+  height: 710px;
+}
+
+/* .filter */
+.page-contest-come .filter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.page-contest-come .btn.btn-filter {
+  display: none;
+}
+
+.page-contest-come .info-match div > .info-points > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -ms-flex-line-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -ms-flex-item-align: baseline;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+  background-color: hsla(217, 35%, 31%, 0.729);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: -37px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: normal;
+}
+
+/********************************************************************************/
+/**************************** => tab-content (Desktop) **************************/
+/********************************************************************************/
+
+.page-contest-come .lineup-block .tab-content.active {
+  margin: 0px;
+  margin-top: -4px;
+  overflow: hidden;
+  height: 710px;
+  background-color: #fff;
+  padding: 0px;
+  border-top: 10px solid #fff;
+}
+
+/*================================
+.partial-my-team  ( tab Meu Time ) (Desktop) 
+==================================*/
+
+/*.meu-time-action */
+
+.my-time-action {
+  margin-left: 0%;
+  margin-top: 1%;
+  display: flex;
+}
+
+.my-time-action .wrapper-action {
+  width: 35px;
+  height: 35px;
+  border-radius: 4;
+  position: relative;
+  margin: 0px 5px;
+}
+
+.my-time-action .wrapper-action #action,
+.my-time-action .wrapper-action label {
+  display: none;
+}
+.my-time-action > a {
+  background: #344763;
+  border-radius: 100%;
+  padding: 0.5rem;
+  display: none;
+  width: 79px;
+  height: 33px;
+  position: absolute;
+  right: 7%;
+  top: 76px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 100px;
+}
+
+.my-time-action > a > span {
+  margin-left: 7px;
+}
+.my-time-action > a img {
+  width: 13px;
+  display: inline-block;
+  margin-left: 17%;
+  margin-top: 18%;
+  height: 62%;
+}
+.my-time-action .field-gridiron-view,
+.my-time-action .field-list-view {
+  background: #344763;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  width: 32px;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 7px;
+}
+
+.my-time-action .time-field,
+.my-time-action .field-gridiron-view,
+.my-time-action .field-list-view {
+  display: none;
+}
+
+.my-time-action .time-list {
+  position: absolute;
+  margin-left: -53px;
+  width: 616px;
+  max-width: 100vw;
+  margin-top: 25px;
+}
+
+.my-time-action .field-gridiron-view.active,
+.my-time-action .field-list-view.active {
+  background: #44618f;
+}
+
+.my-time-action .time-field,
+.my-time-action .field-gridiron-view,
+.my-time-action .field-list-view {
+  display: none;
+}
+
+.page-contest-come .partial-my-team.tab-content.active {
+  overflow-y: auto;
+}
+.page-contest-come .partial-my-team .match-more-information {
+  display: none;
+}
+
+.page-contest-come .partial-my-team .match {
+  font-weight: normal;
+  color: #9c9c9c;
+}
+/* .page-contest-come .partial-my-team .match,
+.page-contest-come .partial-my-team .match b{
+    color: #404040;
+} */
+
+/* .cards-holder / card com jogadores */
+
+.page-contest-come .cards-holder.cards-crew {
+  background: transparent;
+  padding: 0px 9px;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 3%;
+}
+
+.page-contest-come .card-player {
+  padding-right: 0px;
+  margin: 7px 2%;
+  -webkit-filter: drop-shadow(0px 0px 6px #ececec);
+  filter: drop-shadow(0px 0px 6px #ececec);
+  height: 50px;
+}
+
+.page-contest-come .card-crew .card-body {
+  padding: 0px 25px;
+  height: 100% !important;
+  border: 1px solid #ccc;
+  border: none;
+}
+
+.page-contest-come .card-crew {
+  height: 50px !important;
+}
+.page-contest-come .player-pos .badge-position-li-bold {
+  padding: 2px 5px;
+  border-radius: 3px;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.page-contest-come .partial-my-team .card-player .team-logo {
+  background: #f1f1f1e0;
+  border-radius: 100px;
+  padding: 0.1rem;
+  overflow: hidden;
+  height: 37px;
+  width: 38px;
+  box-shadow: 0px 0px 4px #dcd9d9 /*#969595*/;
+  display: inline-block;
+  position: relative;
+  margin-left: 0px;
+  margin-right: 8px;
+}
+.page-contest-come .player-block .player-name {
+  font-size: 12px;
+  color: #2d2f33;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  width: 14ch;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.page-contest-come .player-block b {
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  color: #9c9c9c;
+}
+
+.page-contest-come .card-player .player-pts,
+.page-contest-come .card-player .player-pts strong {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+  width: 10ch;
+  color: #737373;
+  margin-left: 0px;
+}
+
+/* inicio da implementaÃ§Ã£o nova do card-hidden  logo abaixo : */
+
+.page-contest-come .card-player.card-show {
+  transition: all 0.5s;
+  position: relative;
+  z-index: 9;
+  height: 50px !important;
+}
+
+.page-contest-come .card-player.card-show .btn-secondary {
+  position: absolute;
+}
+
+.page-contest-come .card-player.card-show .card-body {
+  transition: all 0.5s;
+  border: none;
+  height: 100% !important;
+}
+.page-contest-come .card-player .card-body .card-hidden {
+  display: none;
+}
+
+/* .page-contest-come .card-player.card-show .card-body .match{
+    margin-left: -11px;
+  } */
+
+.page-contest-come .card-player.card-show .card-body .player-block > .status {
+  left: 179px;
+  font-size: 18px;
+  margin-left: -60px;
+}
+
+.page-contest-come .card-player.card-show .card-body .card-hidden {
+  display: block;
+  margin-top: 0px;
+  position: absolute;
+  z-index: 999;
+  background: #fff;
+  width: 100%;
+  max-width: 100%;
+  right: 0px;
+  top: 59px;
+  -webkit-filter: drop-shadow(0px 0px 6px #e3e3e3);
+  filter: drop-shadow(0px 0px 6px #e3e3e3);
+  padding: 15px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+.page-contest-come .card-player .player-extract {
+  padding: 0px;
+}
+.page-contest-come
+  .cards-holder
+  > .card-show:nth-child(9)
+  + :nth-child(10)
+  + :last-child,
+.page-contest-come .cards-holder > .card-show:nth-child(10) + :last-child,
+.page-contest-come .cards-holder > :last-child.card-show {
+  margin-bottom: 45%;
+}
+.page-contest-come .cards-holder > :last-child.card-show card-hidden {
+  top: -59px;
+}
+.page-contest-come .card-player.card-show .card-body .card-hidden::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  right: 8px;
+  top: -8px;
+  border-radius: 230295px;
+}
+.page-contest-come
+  .card-player.card-show
+  .card-body
+  .card-hidden
+  > .player-extract
+  .title {
+  /* font-size: 11px;
+    font-weight: 600; */
+  display: none;
+}
+.page-contest-come
+  .card-player.card-show
+  .card-body
+  .card-hidden
+  > .player-extract
+  .empty-score {
+  color: #777;
+  font-size: 14px;
+}
+.page-contest-come
+  .card-player.card-show
+  .card-body
+  .card-hidden
+  > .player-extract
+  .extracts {
+  margin: 0px -7px;
+  color: #777;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+.page-contest-come
+  .card-player.card-show
+  .card-body
+  .card-hidden
+  > .player-extract
+  .extracts
+  .col-md-4 {
+  width: 50%;
+}
+
+.page-contest-come div:not(.player-extract) .extracts {
+  width: 375px;
+  max-width: 100%;
+}
+
+.page-contest-come .td-holder .player-extract {
+  width: 359px;
+  position: absolute;
+  background: #fff;
+  left: -361px;
+  height: 100%;
+  padding: 8px 19px;
+  animation: slide 0.5s ease-in;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.page-contest-come .player-extract .extracts {
+  width: auto !important;
+  max-width: auto !important ;
+}
+
+.page-contest-come .td-holder a:focus-within + .player-extract {
+  transition: all 0.5s;
+  display: block;
+}
+
+.page-contest-come .card-player .player-pts .pts-label {
+  /*lembra de remover esse elemento .pts-label do html bem como toda essa regra depois */
+  display: none;
+}
+
+/*===========================
+.partial-games  ( tab Jogos ) (Desktop) 
+=============================*/
+
+.page-contest-come .partial-games .list-match {
+  padding: 20px;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+  border-top: 13px solid white;
+  width: 100%;
+}
+
+.page-contest-come .partial-games .list-match .live {
+  position: absolute;
+  left: -107px;
+  background-color: transparent;
+  top: -20px;
+  color: #d36b6a;
+}
+
+.page-contest-come .partial-games .list-match .live img {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.page-contest-come .partial-games .list-match > a {
+  text-decoration: none;
+}
+
+.page-contest-come .partial-games .list-match > a:hover > .match {
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+
+.page-contest-come .partial-games .list-match .match {
+  transform: scale(1);
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+  box-shadow: 0px 4px 20px #eaeaea;
+}
+
+.page-contest-come .partial-games .list-match .match > div {
+  position: relative;
+}
+
+.page-contest-come .partial-games .list-match .match > div {
+  margin-top: 5px;
+}
+
+.page-contest-come .partial-games .list-match .match .team .team-name {
+  font-size: 11px;
+  width: 16ch;
+  text-align: center;
+  overflow: hidden;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.page-contest-come .partial-games .versus-team {
+  min-width: 80px;
+}
+
+.page-contest-come .partial-games .match-info {
+  margin-top: -22px;
+  margin-bottom: 8px;
+}
+
+.page-contest-come .partial-games .list-match .match .day,
+.page-contest-come .partial-games .list-match .match .current-period-time,
+.page-contest-come .partial-games .list-match .match .hour {
+  font-size: 16px;
+}
+
+.page-contest-come .partial-games .list-match .match .day {
+  font-weight: 400;
+}
+
+.page-contest-come .partial-games .list-match .match-info .hour {
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.page-contest-come .partial-games .versus-team > span {
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+/*===========================================
+.partial-classification ( tab classificaÃ§Ã£o ) (Desktop) 
+=============================================*/
+
+.page-contest-come .partial-classification .search-field {
+  left: 2px;
+}
+
+.partial-classification .participant {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* .page-contest-come .partial-classification .table {
+    margin-top: 28px;
+} */
+.page-contest-come .partial-classification .table-heading + .table-scroll {
+  margin-top: 39px;
+  height: 90%;
+  padding: 7px;
+  padding-bottom: 16%;
+}
+.page-contest-come
+  .partial-classification
+  .table-heading
+  + .table-scroll::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0px 0px 20px 0px #b1b1b1;
+}
+.page-contest-come .partial-classification .table tbody tr {
+  display: table-row;
+}
+
+.page-contest-come
+  .partial-classification
+  .table
+  tr.my-team:not(.select)
+  .participant
+  h2,
+.page-contest-come
+  .partial-classification
+  .table
+  tr.my-team:not(.select)
+  .text-green,
+.page-contest-come
+  .partial-classification
+  .table
+  tr.my-team:not(.select)
+  .td-points {
+  color: #228ef2;
+}
+.page-contest-come
+  .partial-classification
+  .table
+  tr.my-team:not(.select)
+  .td-position {
+  background: #228ef2;
+  color: #fff;
+}
+.page-contest-come .partial-classification .participant > div > p {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: -5px 0px 9px;
+  width: 28ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page-contest-come .partial-classification .participants-list {
+  height: 28px;
+  width: 160px;
+}
+
+.partial-classification .participant {
+  background: transparent !important;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  padding-left: 0px;
+  padding: 0rem;
+  margin-top: 4px;
+  font-weight: 200;
+  border-radius: 4px;
+  color: #bbb;
+}
+
+.page-contest-come .participant > div {
+  text-align: left;
+}
+
+.page-contest-come .partial-classification .td-data .participant img,
+.page-contest-come .partial-classification .td-data .participant svg,
+.page-contest-come .partial-classification .td-data .participant .logo-box,
+.page-contest-come .partial-classification .td-data .logo-box {
+  width: 35px;
+  height: 35px;
+  margin-top: -7px;
+}
+
+.page-contest-come .td-data .participant h2 {
+  margin-bottom: 0px !important;
+  font-size: 12px !important;
+  top: -5px;
+  width: 24ch;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page-contest-come .partial-classification .td-media {
+  margin-right: 12px;
+  color: #c5bfc1;
+}
+
+.page-contest-come .partial-classification .table tbody td:last-child,
+.page-contest-come
+  .partial-classification
+  .players-table.classification
+  tr
+  > td.td-media {
+  position: absolute;
+  bottom: -10px;
+  height: auto;
+}
+.page-contest-come
+  .partial-classification
+  .players-table.classification
+  tr
+  > td.td-media {
+  left: 12%;
+}
+.page-contest-come .partial-classification .table tbody td:last-child {
+  right: 0%;
+}
+.page-contest-come .partial-classification .table.classification .text-green,
+.page-contest-come
+  .partial-classification
+  .table.classification
+  tr.select:nth-child(1)
+  .text-green {
+  color: #c5bfc1;
+}
+
+.partial-classification .lobby-table td.td-points {
+  width: 150px !important;
+  font-size: 35px !important;
+  position: absolute;
+  /* right: 31px; */
+  right: 0px;
+  text-align: right;
+  color: #000;
+  top: 21px;
+}
+.page-contest-come .table .text-green,
+.page-contest-come .td-prizes {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #5ea600;
+  text-align: center;
+}
+
+.page-contest-come .table .text-green,
+.page-contest-come .td-media,
+.page-contest-come .td-media > div,
+.page-contest-come .td-points,
+.page-contest-come .td-prizes {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px !important;
+  font-weight: normal;
+}
+
+.page-contest-come .partial-classification .td-data {
+  /* width: 156px; */
+  width: 143px;
+  padding-left: 24px !important;
+  padding-top: 15px !important;
+}
+
+.page-contest-come .partial-classification .table tbody td {
+  /* padding: 17px 32px; */
+  padding: 17px 15px;
+  border: none !important;
+}
+
+.page-contest-come .partial-classification .table tbody td:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+.page-contest-come .partial-classification .table tbody td:last-child {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.page-contest-come .partial-classification .td-position {
+  font-size: 15px;
+  font-weight: 600;
+  width: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  color: #666;
+}
+
+.page-contest-come .partial-classification .table,
+.page-contest-come .partial-classification .table tbody {
+  display: block;
+}
+
+.partial-classification table.table.players-table.classification tr {
+  display: flex;
+  height: 85px;
+  margin-top: 10px;
+  border-radius: 6px;
+  position: relative;
+  padding: 0px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  border: 0.5px solid #eee;
+}
+
+.partial-classification
+  table.table.players-table.classification
+  tr:nth-child(1) {
+  margin-bottom: 30px;
+  overflow: visible;
+  background: #fff;
+}
+.partial-classification table.table.players-table.classification tr:after,
+.partial-classification table.table.players-table.classification tr::before {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.partial-classification
+  table.table.players-table.classification
+  tr:nth-child(1)::before {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  top: 115%;
+  left: 0px;
+  z-index: 999999;
+}
+.partial-classification table.table.players-table.classification tr:after {
+  width: 83%;
+  height: 2px;
+  background-color: #eee;
+  bottom: 37%;
+  left: 14.5%;
+}
+/*==============================
+.partial-stats ( tab Stats RDB  ) (Desktop) 
+================================*/
+
+.page-contest-come .stats,
+.page-contest-come .stats div {
+  color: #333333;
+}
+
+.page-contest-come .stats-title {
+  margin-top: 50px;
+}
+
+.page-contest-come .stats > div > div {
+  margin-top: 30px;
+  text-align: left;
+  align-items: flex-start;
+  padding: 0px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.page-contest-come .stats > div > div > p:nth-child(2) {
+  line-height: 27px;
+}
+
+.page-contest-come .stats .btn.btn-request-revision {
+  color: #cfcfcf !important;
+  font-weight: bold !important;
+  border: 0.5px solid #cfcfcf !important;
+}
+
+/*=========================
+.partial ( tab Parciais  ) (Desktop) 
+==========================*/
+
+/* player extracts*/
+
+.page-contest-come .extracts .ext-type {
+  font-weight: normal;
+  padding: 0px 8px 0px 0px;
+  font-size: 12px;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-width: 30ch;
+  max-width: 30ch;
+  /* display: inline-block; */
+}
+.modal-follow-tournament .extracts .ext-type {
+  min-width: 16ch;
+  max-width: 17ch;
+  text-align: left;
+}
+
+.page-contest-come .card-player .ext-item {
+  line-height: 17px;
+}
+.page-contest-come .extracts .ext-number,
+.page-contest-come .extracts .ext-point {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0px 6px 0px 0px;
+  font-family: 'Roboto', sans-serif;
+}
+.page-contest-come .extracts .ext-number {
+  font-weight: 600;
+}
+
+.page-contest-come .lineup-block .table-players {
+  margin-top: 0px !important;
+}
+.page-contest-come #players .match > div {
+  font-weight: bold;
+}
+
+.page-contest-come .circle-live {
+  display: inline-block;
+  background: #d06563;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  animation: live 1s alternate infinite;
+}
+
+.page-contest-come #players div.td-holder {
+  width: 100%;
+  height: 50px;
+}
+
+.page-contest-come #players .btn-icon {
+  min-width: 19px;
+}
+
+.page-contest-come #players .btn-icon i {
+  display: inline-block;
+  font-size: 15px;
+  margin-left: -1px;
+}
+
+.page-contest-come .td-holder a:focus-within > i {
+  transform: rotate(180deg);
+  transition: all 0.4s;
+}
+
+.page-contest-come .td-holder a:not(focus-within) > i {
+  transform: rotate(0deg);
+  transition: all 0.4s;
+}
+
+.page-contest-come
+  .td-holder
+  a:not(:focus-within)
+  + .player-extract:not(:hover) {
+  transition: all 0.1s;
+  top: -70px;
+  animation: slideOut 0.5s ease-in;
+}
+
+/*********************************************************/
+/*** PROPIEDADES EM COMUM ENTRE TABS (Desktop) => .tabs-content ***/
+/*********************************************************/
+
+.page-contest-come .player-block .player-name a,
+.page-contest-come #players .player-name a,
+.page-contest-come .player-block .player-name {
+  font-size: 12px;
+  color: #2d2f33;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  width: 23ch;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.page-contest-come .badge-position-li-bold {
+  background: #e7ecf0;
+  border-radius: 3px;
+  color: #3a3b3c;
+  font-weight: bold;
+}
+
+.page-contest-come .btn-secondary:hover {
+  background-color: #d16564;
+  transform: unset;
+  background: linear-gradient(90deg, #d16564 0%, #d16564 100%);
+}
+
+.page-contest-come .partial-my-team .card-player .team-logo img {
+  top: 3px;
+  position: absolute;
+  left: 1px;
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
+  -webkit-filter: contrast(1.39);
+  filter: contrast(1.39);
+}
+
+.page-contest-come .lineup-block .team-name {
+  color: #929292;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.card-player .player-pts,
+.page-contest-come .td-points,
+.page-contest-come .td-media {
+  color: #737373;
+}
+
+.card-player .player-pts,
+.page-contest-come .td-points,
+.page-contest-come .td-media {
+  font-size: 19px;
+  margin-right: 12px;
+}
+.td-points {
+  padding: 0px !important;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+}
+.page-contest-come #players .player-pts,
+.page-contest-come #players .td-points {
+  font-weight: normal;
+}
+
+/********************************************************************************/
+/************* 2Âª coluna da pÃ¡gina  => onde campo com jogadores *****************/
+/********************************************************************************/
+
+/* .info-match dessa coluna e da coluna das .partial.my-team no desktop ela Ã© ocultada nessa tab*/
+
+.page-contest-come .info-match div {
+  text-align: center;
+}
+
+.page-contest-come .match-more-information {
+  position: absolute;
+  right: 100px;
+  width: 88%;
+}
+
+.page-contest-come .info-match {
+  color: #fff;
+  position: relative;
+  z-index: 99;
+}
+.page-contest-come .info-match div > .info-points {
+  position: absolute;
+  right: 0px;
+}
+
+.page-contest-come .info-match div > .info-points > span {
+  background-color: hsla(217, 35%, 31%, 0.729);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: -37px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: normal;
+  height: 57px;
+}
+
+.page-contest-come .info-match div > .info-points .points {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: normal;
+  margin-right: 8px;
+  color: #fff !important;
+  font-size: 45px;
+}
+
+.page-contest-come .match-more-information .new-team {
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 100px;
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  background: #344763;
+  padding: 0.5rem;
+  height: 33px;
+  top: 24px;
+  left: 31px;
+}
+.history .my-time-action > a,
+.page-contest-come.history .match-more-information .new-team {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.page-contest-come .my-team-info {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+}
+.page-contest-come .my-team-info > :nth-child(n) {
+  width: 50%;
+  float: left;
+  font-weight: normal;
+}
+.page-contest-come .my-team-info > :last-child {
+  text-align: right;
+  padding-right: 76px;
+}
+.page-contest-come .my-team-info > :first-child {
+  text-align: left;
+}
+
+.page-contest-come .match-more-information .new-team a span {
+  color: #fff;
+  margin: 0px 9px;
+}
+
+.page-contest-come .new-team .new-lineup.hvr-underline-from-left::before {
+  background: #fff;
+}
+
+/* campo com jogadores DESK */
+
+.page-contest-come .field-block {
+  transform: perspective(400px);
+}
+
+.page-contest-come .gridiron-wrap {
+  position: unset;
+  background-image: unset !important;
+  -webkit-filter: unset !important;
+  filter: unset !important;
+  padding-top: 105.8%;
+}
+
+.page-contest-come .gridiron-wrap .gridiron {
+  background: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 48%;
+}
+
+.page-contest-come .create-wrap .position-line {
+  left: 160px;
+}
+
+.page-contest-come .gridiron-wrap .position-line > .player-item {
+  transform: scale(1);
+  width: auto;
+  margin: 0px 17px !important;
+}
+
+.page-contest-come .gridiron-wrap .position-line > .player-item img {
+  top: -22px;
+}
+.page-contest-come .create-wrap .player-item .player-value,
+.page-contest-come .create-wrap .player-item .player-points {
+  height: 21px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  z-index: 9;
+  margin-bottom: 9px;
+  width: auto;
+  padding: 0px 5px;
+  min-width: 18px;
+  padding-top: 6px;
+  max-width: 60px;
+  display: table;
+  padding: -1px 5px;
+  text-align: center;
+}
+.page-contest-come .create-wrap .player-item .player-value {
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 11px;
+  max-width: 80px;
+}
+
+.page-contest-come .create-wrap .player-item .player-name {
+  height: 14px;
+  min-height: 19px;
+  padding: 2px;
+  z-index: 999;
+  font-size: 11px;
+  top: -74px;
+}
+
+.page-contest-come .field-block .player-item .player-name > span:nth-child(1) {
+  min-width: 8ch;
+  max-width: 13ch;
+  white-space: nowrap;
+  padding-top: 2px;
+  font-weight: normal;
+}
+
+.page-contest-come .player-item:after {
+  content: '';
+  display: block;
+  width: 5%;
+  position: absolute;
+  height: 0%;
+  border-radius: 230295px;
+  transform: rotateX(83deg);
+  top: 84%;
+  left: 31%;
+  opacity: 0.4;
+  background: #000;
+  background-size: 57px;
+  box-shadow: 1rem 8rem 1rem 20px #000000;
+}
+
+/* ordenaÃ§Ã£o jogadores em campo em linha com 5 jogadores */
+.page-contest-come
+  .position-line.fw.order-1
+  + .position-line.md.order-4
+  > div.player-item,
+.page-contest-come .position-line.order-5 > div.player-item {
+  margin: 0px 7px !important;
+}
+
+.page-contest-come
+  .position-line.fw.order-1
+  + .position-line.md.order-4
+  > div:first-child,
+.page-contest-come .position-line.order-5 > div:first-child {
+  right: -1.5vw !important;
+}
+.page-contest-come
+  .position-line.fw.order-1
+  + .position-line.md.order-4
+  > div:last-child,
+.page-contest-come .position-line.order-5 > div:last-child {
+  left: -1.9vw !important;
+}
+
+.page-contest-come
+  .position-line.fw.order-1
+  + .position-line.md.order-4
+  > div:first-child,
+.page-contest-come
+  .position-line.fw.order-1
+  + .position-line.md.order-4
+  > div:last-child,
+.page-contest-come .position-line.order-5 > div:first-child,
+.page-contest-come .position-line.order-5 > div:last-child {
+  top: -27%;
+}
+.page-contest-come
+  .position-line.fw.order-1
+  + .position-line.md.order-4
+  > div.player-item:last-child::after,
+.page-contest-come
+  .position-line.fw.order-1
+  + .position-line.md.order-4
+  > div.player-item:first-child::after,
+.page-contest-come .position-line.order-5 > div.player-item:last-child::after,
+.page-contest-come .position-line.order-5 > div.player-item:first-child::after {
+  top: 89% !important;
+  left: 33% !important;
+}
+
+/*********************************************************/
+/*********** PROPIEDADES FLEX EM COMUM NO GERAL **********/
+/*********************************************************/
+
+/* display : flex */
+.page-contest-come .stats,
+.page-contest-come .stats div,
+.page-contest-come .partial-games .versus-team,
+.page-contest-come .participant,
+.page-contest-come .participants-list,
+.page-contest-come .table-heading .filter,
+.page-contest-come .match-more-information,
+.page-contest-come .partial-games .list-match .match,
+.page-contest-come .partial-games .list-match .match > div,
+.page-contest-come .partial-games .list-match .match > div > div,
+.page-contest-come .partial-games .list-match .match .match-info,
+.page-contest-come .partial-games .list-match .match .team,
+.page-contest-come .info-match div > .info-points,
+.page-contest-come .info-match div > .info-points > span {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* align-items : center */
+.page-contest-come .stats,
+.page-contest-come .stats div,
+.page-contest-come .partial-games .versus-team,
+.page-contest-come .participant,
+.page-contest-come .partial-games .list-match .match,
+.page-contest-come .partial-games .list-match .match > div,
+.page-contest-come .partial-games .list-match .match > div > div,
+.page-contest-come .partial-games .list-match .match .match-info,
+.page-contest-come .partial-games .list-match .match .team,
+.page-contest-come .info-match div > .info-points {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-item-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* align-items: baseline */
+.page-contest-come .info-match div > .info-points > span {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -ms-flex-item-align: baseline;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+}
+
+/* justify-content : center */
+.page-contest-come .stats,
+.page-contest-come .stats div,
+.page-contest-come .partial-games .versus-team,
+.page-contest-come .participant,
+.page-contest-come .table-heading .filter,
+.page-contest-come .partial-games .list-match .match .match-info,
+.page-contest-come .info-match div > .info-points,
+.page-contest-come .info-match div > .info-points > span {
+  -webkit-box-pack: center;
+  -ms-flex-line-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* justify-content : space-around */
+.page-contest-come .table-heading .filter {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -ms-flex-line-pack: justify;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  display: none;
+}
+
+/* justify-content : space-between */
+.page-contest-come .partial-games .list-match .match > div,
+.page-contest-come .partial-games .list-match .match > div > div {
+  -webkit-box-pack: justify;
+  -ms-flex-line-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+/* justify-content: space-evenly */
+.page-contest-come .partial-games .list-match .match,
+.page-contest-come .participants-list,
+.page-contest-come .partial-games .list-match .match .team {
+  -webkit-box-pack: justify;
+  -ms-flex-line-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+}
+
+/* flex-direction: row-reverse */
+.page-contest-come .partial-games .list-match .match .team.out {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+/* flex-wrap: wrap */
+.page-contest-come .participants-list {
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* flex-direction: column */
+.page-contest-come .stats,
+.page-contest-come .stats div,
+.page-contest-come .partial-games .versus-team,
+.page-contest-come .partial-games .list-match .match,
+.page-contest-come .match-more-information {
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/********************************************************************************/
+/********************************* MEDIAS SCREEN ********************************/
+/********************************************************************************/
+
+@media (min-width: 1600px) {
+  .page-contest-come #wrapper {
+    background-position: 42vw 937px, 26vw 483px, 0px 0px !important;
+    background-size: 57vw auto, 86vw 43%, 100% 112% !important;
+  }
+  .create-wrap .player-item img {
+    max-width: 90px !important;
+  }
+  .page-contest-come .create-wrap .player-item .player-points {
+    height: 17px !important;
+    margin-bottom: 6px !important;
+    top: -36px;
+    padding: 2px 3px;
+  }
+  .page-contest-come .create-wrap .player-item .player-name {
+    font-size: 12px !important;
+    top: -77px;
+  }
+  .page-contest-come .gridiron-wrap .position-line > .player-item img {
+    top: -32px;
+  }
+  .page-contest-come .gridiron-wrap .gridiron {
+    top: 7vh;
+    left: 0vw;
+  }
+}
+
+@media (min-width: 1920px) {
+  .page-contest-come .gridiron-wrap .gridiron {
+    top: -0.6vh;
+    left: 2.5vw;
+  }
+
+  .create-wrap .position-line {
+    height: 17% !important;
+  }
+}
+@media (min-width: 3840px) {
+  .page-contest-come .gridiron {
+    top: 9.4vh;
+    left: -6.5vw;
+  }
+}
+
+@media (max-width: 1600px) {
+  .page-contest-come .gridiron {
+    top: 4vh;
+    left: -0.5vw;
+  }
+
+  .page-contest-come .create-wrap .position-line {
+    height: 20%;
+  }
+
+  .page-contest-come .player-item:after {
+    top: 86% !important;
+    left: 30% !important;
+  }
+
+  /* ordernaÃ§Ã£o jogadores em campo */
+
+  /* linhas com 5 jogadores na defesa*/
+  .page-contest-come .create-wrap .position-line.df.order-5 {
+    height: 20%;
+  }
+
+  /* linhas com 5 jogadores no meio campo*/
+  .page-contest-come .create-wrap .position-line.df.order-5 {
+    height: 20%;
+  }
+
+  /* linhas com 5 jogadores na defesa com 4 no meio campo */
+  .page-contest-come .create-wrap .position-line.md.order-4 {
+    height: 20%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .page-contest-come .gridiron {
+    top: 1vh;
+    left: -1.5vw;
+  }
+
+  .page-contest-come .create-wrap .position-line {
+    height: 19%;
+  }
+
+  .page-contest-come .player-item:after {
+    top: 84% !important;
+    left: 30% !important;
+  }
+}
+
+@media (max-width: 1366px) {
+  .page-contest-come .gridiron {
+    top: 1vh;
+    left: -3vw;
+  }
+
+  .page-contest-come .player-item:after {
+    top: 93% !important;
+    left: 31% !important;
+  }
+
+  /* posiÃ§Ã£o padrÃ£o jogadores 1333px */
+
+  .page-contest-come .create-wrap .position-line {
+    height: 19%;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 1330px) {
+  .page-contest-come .player-item:after {
+    top: 82% !important;
+    left: 27% !important;
+  }
+}
+
+@media (max-width: 769px) {
+  /***************************** max-width: 769px *********************************/
+
+  .page-contest-come .tabs-horizontal .active .tabs-chk span {
+    color: #ffffff;
+    background: transparent;
+  }
+  .page-contest-come {
+    overflow: hidden;
+    touch-action: none;
+    /* padding-top: 20px;
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top); */
+    background: unset;
+    height: 100vh;
+  }
+  .page-contest-come #wrapper {
+    background-color: #1f2b3e;
+    background: url('../../images/bg-hub-mobile.png') !important;
+    background-size: 100vw 100vh !important;
+    background-position: 0vw -8vh !important;
+    background-repeat: no-repeat !important;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    overflow: hidden;
+    touch-action: none;
+    height: 100vh;
+    /* height: 100%;  */
+    padding: 0px;
+    z-index: 999999;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .page-contest-come header {
+    background: #1f2b3e;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    padding-top: 20px;
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+    z-index: 999999;
+  }
+  .page-contest-come .hub-bar .back {
+    position: absolute;
+    left: -24px;
+  }
+  .page-contest-come .hub-bar .back a {
+    font-size: 27px;
+  }
+
+  .my-time-action .field-list-view + div.time-list,
+  .my-time-action .field-gridiron-view + div.time-field {
+    display: none;
+  }
+  .my-time-action > a,
+  .my-time-action .field-list-view.active + div.time-list,
+  .my-time-action .field-gridiron-view.active + div.time-field {
+    display: flex;
+  }
+
+  .page-contest-come .search-field input.form-control {
+    padding-left: 22px;
+    margin-top: -7px !important;
+  }
+  .page-contest-come .partial .search-field input.form-control {
+    margin-top: -12px !important;
+  }
+  .page-contest-come .table-heading + .table-scroll {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-right: 5px;
+    width: 100%;
+    padding-bottom: 109%;
+    height: 116.5vh;
+    padding-top: 32px;
+    /* padding-top: calc(32px + constant(safe-area-inset-top));
+    padding-top: calc(32px + env(safe-area-inset-top)); */
+  }
+
+  .page-contest-come .lobby-table tbody tr {
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    height: 50px;
+    width: 450px;
+    max-width: 100%;
+    margin: 0px auto;
+  }
+
+  .page-contest-come .lineup-block .participant {
+    margin-top: -6px !important;
+    margin-left: -15px;
+  }
+
+  .page-contest-come .td-data .participant h2 {
+    font-size: 14px !important;
+    width: 20ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .page-contest-come .lineup-block p {
+    font-size: 10px !important;
+    font-weight: normal !important;
+  }
+
+  .page-contest-come.td-position,
+  .page-contest-come .table .text-green,
+  .page-contest-come .td-media {
+    font-size: 12px;
+  }
+
+  .page-contest-come .lineup-block p {
+    font-size: 10px;
+    font-weight: normal !important;
+    margin: 0px 0px 20px;
+  }
+
+  /***************************** max-width: 769px **********************************/
+  /************************* TABS => tab-content (Mobile) *************************/
+  /********************************************************************************/
+
+  .page-contest-come .table-heading + .table-scroll {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .page-contest-come .tabs-horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: distribute;
+    -ms-flex-line-pack: distribute;
+    -ms-justify-content: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    -ms-flex-item-align: baseline;
+    -webkit-align-items: baseline;
+    align-items: baseline;
+    background-color: #23324a;
+    padding: 1rem 0rem;
+    position: fixed;
+    left: 0px;
+    /* top: calc(100vh - 80px);  */
+    bottom: 0px;
+    /* padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom); */
+    padding-bottom: calc(14px + constant(safe-area-inset-bottom));
+    padding-bottom: calc(14px + env(safe-area-inset-bottom));
+    width: 100%;
+    z-index: 99999999999999999999999999999999;
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    overflow: hidden;
+    touch-action: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .page-contest-come .tabs-horizontal .tabs-chk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -ms-justify-pack: center;
+    -ms-flex-line-pack: center;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-flex-item-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: auto !important;
+    align-self: baseline;
+  }
+
+  .page-contest-come .lineup-block .tab-content.active {
+    background-color: transparent;
+    padding-bottom: 100%;
+    left: 0px;
+    width: 100%;
+    position: fixed;
+    top: 156px;
+    top: calc(156px + constant(safe-area-inset-top));
+    top: calc(156px + env(safe-area-inset-top));
+    border-top: 10px solid transparent;
+    padding-top: 10px;
+    padding-bottom: 100% !important;
+    height: 81vh;
+  }
+
+  .page-contest-come .tabs-horizontal .tabs-chk span {
+    font-size: 12px !important;
+    background-color: transparent;
+    padding: 0px !important;
+  }
+
+  .page-contest-come .tabs-horizontal .tabs-chk img {
+    display: inline-block;
+    width: 30px;
+    -webkit-filter: invert(0.5);
+    filter: invert(0.5);
+  }
+
+  .page-contest-come .tabs-horizontal .active img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+  /*================================
+.partial-my-team  ( tab Meu Time )
+        max-width: 769px 
+==================================*/
+  .page-contest-come .filter {
+    color: #fff;
+    font-size: 9px;
+  }
+  .page-contest-come .partial-my-team .card-crew .card-body .player-block {
+    width: 47%;
+  }
+  .page-contest-come
+    .partial-my-team
+    .card-crew
+    .card-body
+    .player-block
+    > .player-name {
+    width: 16ch;
+  }
+  .page-contest-come
+    .partial-my-team
+    .card-crew
+    .card-body
+    .player-block
+    > .player-name
+    > .name {
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+  }
+  .page-contest-come .partial-my-team .card-player .player-pts {
+    width: 6ch;
+    text-align: right;
+  }
+  .page-contest-come .partial-my-team.tab-content.active {
+    left: 0px;
+    top: 80px;
+    overflow: hidden;
+    z-index: 9991;
+    top: calc(76px + constant(safe-area-inset-top));
+    top: calc(76px + env(safe-area-inset-top));
+  }
+
+  .page-contest-come .partial-my-team .match-more-information {
+    top: -79px;
+    left: 71px;
+    display: flex !important;
+  }
+  .page-contest-come .info-match div > .info-points > span {
+    display: none;
+  }
+  .page-contest-come
+    .partial-my-team.active
+    .info-match
+    div
+    > .info-points
+    > span {
+    position: fixed !important;
+    right: 0px;
+    width: 100px;
+    left: 0px;
+    background-color: transparent !important;
+    padding-top: 3px;
+    padding-top: calc(109px + constant(safe-area-inset-top));
+    top: calc(109px + env(safe-area-inset-top));
+    display: inherit;
+  }
+
+  .page-contest-come .info-match div > .info-points > span span.points {
+    font-size: 30px;
+    margin: 2px;
+  }
+
+  .partial-my-team .progress-tournament.mobile {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    /* top: 16px;
+        top: calc(14px + constant(safe-area-inset-top));
+        top: calc(14px + env(safe-area-inset-top)); */
+  }
+
+  /* campo com jogadores max-width: 769px  */
+
+  .page-contest-come .field-block {
+    background: url('../../images/field2.png') !important;
+    top: 206px;
+    height: 100vh;
+    background-size: 300% 75% !important;
+    background-position: 47.5% 20% !important;
+    background-repeat: no-repeat !important;
+    scroll-snap-align: center;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    scroll-behavior: smooth;
+    width: 100%;
+    position: fixed;
+    display: none;
+  }
+
+  .page-contest-come .gridiron-wrap .gridiron {
+    top: 0vh;
+    left: 0vw;
+    transform: scale(1.19);
+    width: 100%;
+  }
+
+  .page-contest-come .gridiron .position-line {
+    position: absolute;
+    left: -5px;
+    height: 56px;
+    -webkit-transform: scale(1) !important;
+    transform: scale(1) !important;
+  }
+
+  .page-contest-come .gridiron .position-line.fw {
+    top: 5%;
+  }
+
+  .page-contest-come .gridiron .position-line.md {
+    top: 18%;
+  }
+
+  .page-contest-come .gridiron .position-line.df {
+    top: 33%;
+  }
+
+  .page-contest-come .gridiron .position-line.gk {
+    top: 47%;
+  }
+
+  .page-contest-come .player-item:after {
+    content: unset;
+  }
+
+  /* .cards-holder / card com jogadores max-width: 769px  */
+
+  .page-contest-come .partial-my-team .match {
+    margin-top: 1px;
+  }
+  .my-time-action .time-list {
+    margin-left: -49px;
+    margin-top: 13px;
+    width: 100vw;
+  }
+
+  .partial-my-team .cards-crew .card:last-child {
+    margin-bottom: 15vh;
+  }
+
+  .page-contest-come .card-player.card-show .player-block {
+    margin-top: 0px;
+    width: 44%;
+  }
+
+  .page-contest-come .cards-holder.cards-crew {
+    height: 70vh;
+    min-height: 65vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0px 3px;
+  }
+
+  .page-contest-come .card-player {
+    width: 450px;
+    max-width: 98%;
+    margin: 8px auto;
+  }
+  .page-contest-come .card-player {
+    -webkit-filter: unset;
+    filter: unset;
+  }
+  .page-contest-come .card-player.card-show .card-body .card-hidden {
+    -webkit-box-shadow: 0px 0px 6px #000;
+    box-shadow: 0px 0px 6px #000;
+    -webkit-filter: unset;
+    filter: unset;
+  }
+  .page-contest-come
+    .cards-holder
+    .card-player:last-child.card-show
+    .card-body
+    .card-hidden {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+  }
+  .page-contest-come .card-crew .card-body {
+    padding-left: 10px;
+  }
+  .page-contest-come .player-block .player-name {
+    font-size: 14px;
+  }
+
+  .page-contest-come .player-pos {
+    margin-right: 0px;
+  }
+
+  .page-contest-come .player-pos .badge-position-li-bold {
+    font-size: 10px;
+  }
+
+  .page-contest-come .card-player .player-pts {
+    margin: 0px;
+    text-align: center;
+    width: 6ch;
+  }
+  .page-contest-come .card-player.card-show .player-pts {
+    padding-left: 13px;
+  }
+
+  .page-contest-come .card-player .player-pts strong {
+    font-size: 24px;
+  }
+
+  .page-contest-come .extracts .ext-number,
+  .page-contest-come .extracts .ext-point,
+  .page-contest-come .card-player .ext-point,
+  .page-contest-come
+    .card-player.card-show
+    .card-body
+    .card-hidden
+    > .player-extract
+    .extracts
+    .ext-number {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .page-contest-come .extracts .ext-item {
+    padding: 0px 7px;
+  }
+  .page-contest-come .extracts .ext-type {
+    /* 
+        min-width: auto; */
+    font-size: 10px;
+    max-width: 18ch;
+    min-width: 6ch;
+    vertical-align: top;
+    display: inline-block;
+  }
+  .page-contest-come .partial-my-team .extracts .ext-type {
+    min-width: 20ch;
+  }
+  .page-contest-come
+    .card-player.card-show
+    .card-body
+    .card-hidden
+    > .player-extract
+    .extracts {
+    margin: 0px;
+  }
+  .page-contest-come .card-player.card-show .card-body .player-block .match {
+    left: 0vw;
+    top: 22px;
+  }
+
+  /*===========================
+.partial-games  ( tab Jogos )
+        max-width: 769px 
+=============================*/
+
+  .page-contest-come .partial-games .list-match > a:hover > .match {
+    transform: scale(1);
+    transition: all 0.1s ease-in-out;
+  }
+
+  .page-contest-come .lineup-block .partial-games.tab-content.active {
+    margin-top: 0px !important;
+    top: 87px;
+    top: calc(87px + constant(safe-area-inset-top));
+    top: calc(87px + env(safe-area-inset-top));
+    overflow-y: auto !important;
+  }
+
+  .page-contest-come .partial-games .list-match {
+    padding: 4px;
+    border-top: none;
+    width: 520px;
+    max-width: 100%;
+    margin: 0px auto;
+    height: auto;
+  }
+
+  .page-contest-come .partial-games .list-match .match:last-child {
+    margin-bottom: 10px;
+  }
+
+  .page-contest-come .partial-games .list-match .match-info {
+    margin-top: -30px;
+    margin-bottom: 12px;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .page-contest-come .partial-games .list-match .match {
+    box-shadow: none;
+    height: 75px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .page-contest-come .partial-games .list-match .match-info .day,
+  .page-contest-come .partial-games .list-match .current-period-time,
+  .page-contest-come .partial-games .list-match .match-info .hour {
+    font-size: 13px;
+  }
+
+  .page-contest-come .partial-games .list-match .match > div {
+    position: relative;
+  }
+
+  .page-contest-come .partial-games .list-match .match > div > div {
+    margin-top: 14px;
+    margin-left: 0px;
+  }
+
+  .page-contest-come .partial-games .list-match .match .team {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .page-contest-come .partial-games .list-match .match .team .team-name {
+    font-size: 10px;
+  }
+
+  .page-contest-come .partial-games .list-match .league-flag {
+    width: 26px !important;
+  }
+
+  .page-contest-come .partial-games .versus-team {
+    min-width: 42px;
+  }
+  .page-contest-come .partial-games .versus-team > span {
+    letter-spacing: 0px;
+  }
+
+  .partial-games .versus-team > span {
+    width: 5.59ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .partial-classification .match-info,
+  .partial-games .versus-team > span {
+    transform: scale(1);
+  }
+
+  /*===========================================
+.partial-classification ( tab classificaÃ§Ã£o )
+            max-width: 769px 
+=============================================*/
+
+  .page-contest-come .partial-classification .table tbody td:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    margin-top: -10px;
+  }
+
+  .page-contest-come
+    .partial-classification
+    .table
+    tr.my-team:not(.select)
+    td:first-child {
+    background: #228ef2;
+    color: #fff !important;
+  }
+  .page-contest-come .partial-classification .table.classification .td-points,
+  .page-contest-come
+    .partial-classification
+    .players-table.classification
+    tr
+    > td.td-media {
+    min-width: 9ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0px;
+  }
+
+  .page-contest-come .partial-classification .table tbody td:last-child,
+  .page-contest-come
+    .partial-classification
+    .players-table.classification
+    tr
+    > td.td-media {
+    position: absolute;
+    bottom: -10px;
+  }
+  .page-contest-come
+    .partial-classification
+    .players-table.classification
+    tr
+    > td.td-media {
+    left: 14%;
+    width: 62px;
+  }
+
+  .page-contest-come .partial-classification .table tbody td:last-child {
+    border-right: none !important;
+    /* right: 5%; */
+    width: 35% !important;
+  }
+  .page-contest-come
+    .partial-classification
+    .table
+    tbody
+    td:last-child
+    .text-green {
+    text-align: right;
+  }
+  .page-contest-come .partial-classification .table-heading + .table-scroll {
+    margin-top: 0px;
+    /* overflow-y: scroll !important; */
+    padding: 15px;
+  }
+
+  .page-contest-come
+    .card-player.card-show
+    .card-body
+    .card-hidden
+    > .player-extract
+    .extracts
+    .ext-point {
+    padding: 0px;
+  }
+  .page-contest-come .partial-classification .table-heading {
+    position: relative;
+    height: 35px;
+    top: 0px;
+  }
+  .partial-classification .search-field .search-icon {
+    top: 6.2px;
+  }
+  .page-contest-come .partial-classification.tab-content.active {
+    left: 0px;
+    top: 99px;
+    overflow-y: auto;
+    /* top: constant(safe-area-inset-top);
+        top: env(safe-area-inset-top); */
+    width: 100%;
+  }
+
+  .page-contest-come .lobby-table.width-all {
+    box-shadow: none;
+    padding: 0px !important;
+    padding-top: 115px !important;
+    padding-top: calc(122px + constant(safe-area-inset-top)) !important;
+    padding-top: calc(122px + env(safe-area-inset-top)) !important;
+    overflow: hidden;
+    height: 710px;
+  }
+
+  .page-contest-come .table-heading {
+    width: 70%;
+    position: fixed;
+    left: 0px;
+    top: 112px;
+    top: calc(112px + constant(safe-area-inset-top));
+    top: calc(112px + env(safe-area-inset-top));
+    z-index: 999999;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .page-contest-come .search-field {
+    width: 53% !important;
+    left: 16px !important;
+    top: 15px !important;
+  }
+
+  .partial-classification .table-heading .search-field .form-control {
+    height: 28px;
+  }
+
+  .page-contest-come .partial-classification .table-heading .filter {
+    left: 41%;
+    top: 139px !important;
+    top: calc(139px + constant(safe-area-inset-top)) !important ;
+    top: calc(139px + env(safe-area-inset-top)) !important;
+    width: 57%;
+    height: 20px;
+    position: fixed;
+    align-items: baseline;
+    display: none;
+  }
+
+  .partial-classification .table-heading .filter div {
+    display: inline-block;
+    color: #fff;
+  }
+
+  .partial-classification .table-heading .filter div {
+    display: inline-block;
+    color: #fff;
+  }
+
+  .partial-classification table.table.players-table.classification {
+    max-width: 100%;
+    padding-bottom: 100%;
+    margin-top: -7px;
+  }
+
+  .partial-classification table.table.players-table.classification tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 95px;
+    margin-top: 10px;
+    border-radius: 6px;
+    position: relative;
+    padding-top: 10px;
+    /* align-items: center; */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .partial-classification table.table.players-table.classification tr:after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #eee;
+    position: absolute;
+    bottom: 41%;
+    left: 18%;
+  }
+
+  .partial-classification
+    table.table.players-table.classification
+    tr:nth-child(1) {
+    margin-bottom: 30px;
+    overflow: visible;
+    background: #fff;
+  }
+  .page-contest-come
+    .partial-classification
+    .table.classification
+    tr.select:nth-child(1)
+    .td-points {
+    color: #000;
+  }
+  .page-contest-come
+    .partial-classification
+    .table.classification
+    tr.select:nth-child(1)
+    .td-data
+    .participant
+    h2 {
+    color: #333333;
+  }
+  .page-contest-come
+    .partial-classification
+    .table.classification
+    tr.select:nth-child(1)
+    .td-position {
+    color: #666;
+  }
+  .page-contest-come .partial-classification .table.classification .text-green,
+  .page-contest-come
+    .partial-classification
+    .table.classification
+    tr.select:nth-child(1)
+    .text-green {
+    color: #c5bfc1;
+  }
+  .partial-classification
+    table.table.players-table.classification
+    tr:nth-child(1)::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    top: 115%;
+    left: 0px;
+    z-index: 999999;
+  }
+
+  .page-contest-come .table.classification tr.select {
+    border: 0.009px solid #ccc !important;
+  }
+
+  .page-contest-come .table.classification tbody td {
+    padding: 17px 5px !important;
+  }
+  .page-contest-come .table.classification tbody td.td-data {
+    padding: 0px !important;
+    padding-top: 10px !important;
+  }
+  .page-contest-come .partial-classification .lobby-table.width-all {
+    height: auto;
+    padding-top: 20px !important;
+    padding-top: calc(20px + constant(safe-area-inset-top)) !important;
+    padding-top: calc(20px + env(safe-area-inset-top)) !important;
+  }
+
+  .partial-classification .lobby-table td.td-position {
+    /* min-width: 7ch; */
+    margin-left: 0px;
+    font-size: 17px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 48px;
+    margin-right: 6px;
+  }
+
+  .partial-classification .lobby-table td.td-data {
+    width: 200px;
+  }
+  .partial-classification .lobby-table td.td-data .participants-list {
+    width: 100%;
+    margin-left: -3px;
+  }
+
+  .partial-classification .participant {
+    margin-top: -4px !important;
+    margin-left: -14px;
+    width: auto;
+    height: 28px;
+  }
+
+  /* .partial-classification .lobby-table .td-points,
+    .partial-classification .lobby-table .td-media > div,
+    .partial-classification .lobby-table .text-green {
+        line-height: 16px;
+        font-size: 14px !important;
+        text-align: center;
+    } */
+
+  .partial-classification .lobby-table .text-green {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* width: 11ch; */
+  }
+
+  .partial-classification .lobby-table td.td-points {
+    width: 50px !important;
+    font-size: 30px !important;
+    position: absolute;
+    text-align: right;
+    color: #000;
+    top: 0px;
+  }
+
+  /*===============================
+.partial-stats  ( tab Stats RDB )
+         max-width: 769px 
+=================================*/
+  .page-contest-come .lineup-block .partial-stats.tab-content.active {
+    background-color: #fff;
+    padding-bottom: 15rem;
+    margin-bottom: 5rem;
+    width: 450px;
+    max-width: 93%;
+    height: 369px;
+    padding: 1rem;
+    padding-bottom: 7%;
+    top: 101px;
+    top: calc(101px + contast(safe-area-inset-top));
+    top: calc(101px + env(safe-area-inset-top));
+  }
+  .page-contest-come .stats .stats-title {
+    margin-top: 0px !important;
+    margin-bottom: 0px;
+  }
+
+  .page-contest-come .stats .stats-title p {
+    font-size: 16px !important;
+    margin-top: 10px;
+  }
+
+  .page-contest-come .stats .stats-title p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .page-contest-come .stats img {
+    width: 147px;
+  }
+
+  .page-contest-come .stats > div > div {
+    padding: 0px;
+  }
+
+  .page-contest-come .stats .lineup-block p,
+  .page-contest-come .stats > div > div b a {
+    font-size: 13px !important;
+  }
+  .page-contest-come .partial-stats.tab-content.active {
+    left: 3%;
+  }
+
+  /*===============================
+.partial-stats  ( tab Parciais )
+         max-width: 769px 
+=================================*/
+
+  .page-contest-come .partial .table-heading + .table-scroll {
+    overflow-y: hidden;
+    margin-top: 60px;
+    margin-top: calc(60px + constant(safe-area-inset-top));
+    margin-top: calc(60px + env(safe-area-inset-top));
+  }
+
+  .page-contest-come .partial.tab-content.active {
+    overflow-y: hidden;
+    top: 68px;
+  }
+
+  .page-contest-come #players .td-score-position > div > div > span {
+    width: 35px;
+    height: 35px;
+    padding: 9px 1px;
+    font-size: 15px;
+    position: relative;
+  }
+
+  .page-contest-come #players .match {
+    font-size: 11px;
+  }
+
+  .page-contest-come .search-field i {
+    left: 5px;
+    top: 8px;
+  }
+}
+
+@media (max-width: 569px) {
+  .page-contest-come .search-field {
+    width: 62% !important;
+    top: 14px !important;
+  }
+
+  /***************************** max-width: 565px *********************************/
+  /************************* TABS => tab-content (Mobile) *************************/
+  /********************************************************************************/
+
+  /*================================
+.partial-my-team  ( tab Meu Time )
+        max-width: 565px
+==================================*/
+
+  .page-contest-come .info-match div > .info-points > span {
+    padding: 0.4rem 0.5rem;
+  }
+
+  .info-match div > .info-points > span span.points {
+    font-size: 30px;
+  }
+
+  .partial-my-team .cards-crew .card:last-child {
+    margin-bottom: 68vh;
+  }
+
+  /* campo com jogadores 565px */
+
+  .page-contest-come .create-wrap .player-item .player-value {
+    height: 23px;
+    margin-bottom: 5px;
+    padding-top: 8px;
+  }
+
+  .my-time-action .field-gridiron-view.active + div.time-field {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    left: -1vw;
+    top: 0px;
+    overflow: hidden;
+  }
+
+  .page-contest-come .partial-my-team .field-block {
+    top: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-size: 859px !important;
+    background-position: 48.1% 26% !important;
+    background-repeat: no-repeat !important;
+    scroll-snap-align: center;
+    overflow: hidden;
+    position: absolute;
+  }
+  .page-contest-come .field-block {
+    background: url(../../images/field.png) !important;
+  }
+  .page-contest-come .gridiron-wrap .position-line > .player-item {
+    margin: 0px 0.5% !important;
+    width: 33.333%;
+  }
+
+  .page-contest-come .partial-my-team .gridiron .position-line {
+    -webkit-transform: scale(0.6) !important;
+    transform: scale(0.6) !important;
+    width: 100%;
+  }
+
+  .page-contest-come .partial-my-team .create-wrap .player-item img {
+    max-width: 64px;
+  }
+
+  .page-contest-come .partial-my-team .gridiron .position-line.fw {
+    top: 2%;
+  }
+
+  .page-contest-come .partial-my-team .gridiron .position-line.md {
+    top: 13%;
+  }
+  .page-contest-come .partial-my-team .gridiron .position-line.df {
+    top: 26%;
+  }
+  .page-contest-come .partial-my-team .gridiron .position-line.gk {
+    top: 39%;
+  }
+  .page-contest-come .create-wrap .player-item img {
+    max-width: 84vw !important;
+    height: 12vh !important;
+  }
+  .page-contest-come
+    .field-block
+    .player-item
+    .player-name
+    > span:nth-child(1) {
+    min-width: 5ch;
+    max-width: 11.8ch;
+  }
+  .page-contest-come .create-wrap .player-item .player-points {
+    font-size: 24px;
+    height: 29px;
+    margin-bottom: -3px;
+    padding-top: 8px;
+    min-width: 28px;
+  }
+  .page-contest-come .create-wrap .player-item .player-name {
+    font-size: 15.5px;
+    min-height: 23px;
+  }
+
+  .page-contest-come .gridiron-wrap .gridiron {
+    top: -4vh;
+  }
+
+  /*ordenaÃ§Ã£o jogadores em campo  565px */
+
+  .page-contest-come
+    .position-line.fw.order-1
+    + .position-line.md.order-4
+    > div:first-child,
+  .page-contest-come
+    .position-line.fw.order-1
+    + .position-line.md.order-4
+    > div:last-child,
+  .page-contest-come .position-line.order-5 > div:first-child,
+  .page-contest-come .position-line.order-5 > div:last-child {
+    top: -114%;
+  }
+  .page-contest-come
+    .position-line.fw.order-1
+    + .position-line.md.order-4
+    > div:first-child,
+  .page-contest-come .position-line.order-5 > div:first-child {
+    left: 4.5% !important;
+  }
+  .page-contest-come
+    .position-line.fw.order-1
+    + .position-line.md.order-4
+    > div:last-child,
+  .page-contest-come .position-line.order-5 > div:last-child {
+    right: 4.5% !important;
+  }
+  .page-contest-come
+    .position-line.fw.order-1
+    + .position-line.md.order-4
+    > div.player-item,
+  .page-contest-come .position-line.order-5 > div.player-item {
+    margin: 28px -1vw !important;
+  }
+  .page-contest-come
+    .position-line.fw.order-1
+    + .position-line.md.order-4
+    > div.player-item:last-child::after,
+  .page-contest-come
+    .position-line.fw.order-1
+    + .position-line.md.order-4
+    > div.player-item:first-child::after,
+  .page-contest-come .position-line.order-5 > div.player-item:last-child::after,
+  .page-contest-come
+    .position-line.order-5
+    > div.player-item:first-child::after {
+    top: 240% !important;
+  }
+  /*===========================
+.partial-games  ( tab Jogos )
+       max-width: 565px
+=============================*/
+
+  .page-contest-come .partial-games .list-match .match .team .team-name {
+    width: 16ch;
+  }
+
+  .page-contest-come .league-flag {
+    width: 19px;
+  }
+
+  .page-contest-come .partial-games .list-match .live {
+    left: -21px;
+  }
+
+  /*===========================================
+.partial-classification ( tab classificaÃ§Ã£o )
+             max-width: 565px
+=============================================*/
+
+  .page-contest-come .partial-classification .td-data .participant img,
+  .page-contest-come .partial-classification .td-data .participant svg,
+  .page-contest-come .partial-classification .td-data .participant .logo-box,
+  .page-contest-come .partial-classification .td-data .logo-box {
+    width: 39px;
+    height: 32px;
+    margin-top: -3px;
+  }
+
+  .partial-classification .search-field {
+    width: 62% !important;
+    left: 8% !important;
+    height: 26px;
+    top: 4px !important;
+    background: #ffffff;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .page-contest-come .partial-classification .table-heading .filter {
+    left: 48%;
+    width: 51%;
+  }
+  .page-contest-come .table-heading .filter > :last-child {
+    padding-left: 0px;
+  }
+  .partial-classification table.table.players-table.classification tbody tr {
+    padding-left: 0px !important;
+    height: 80px;
+  }
+
+  .partial-classification .lobby-table td.td-data .participants-list {
+    margin-left: 1px;
+  }
+
+  .partial-classification .participant {
+    width: 140px;
+    margin-top: 1px !important;
+    margin-left: -9px;
+  }
+
+  .page-contest-come .td-data .participant h2 {
+    top: -1px;
+  }
+
+  .page-contest-come .partial-classification .participant > div > p {
+    margin: -8px 0px 9px;
+    width: 29ch;
+  }
+
+  .partial-classification .td-media {
+    font-size: 17px !important;
+    font-weight: 200;
+  }
+
+  /*===============================
+.partial-stats  ( tab Stats RDB )
+        max-width: 565px
+=================================*/
+
+  .page-contest-come .partial-stats.tab-content.active {
+    margin: 5px auto;
+  }
+  .page-contest-come .stats img {
+    width: 100px;
+  }
+
+  .page-contest-come .stats > div > div b a {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-contest-come .partial-my-team .gridiron .position-line.fw {
+    top: 0%;
+  }
+
+  .page-contest-come .partial-my-team .gridiron .position-line.md {
+    top: 11%;
+  }
+
+  .page-contest-come .partial-my-team .gridiron .position-line.df {
+    top: 23%;
+  }
+  .page-contest-come .partial-my-team .gridiron .position-line.gk {
+    top: 35%;
+  }
+}
+@media (max-width: 375px) and (max-height: 667px) {
+  .page-contest-come .partial-my-team .field-block {
+    top: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-size: 766px 379px !important;
+    background-position: 48.1% 10% !important;
+    background-repeat: no-repeat !important;
+    scroll-snap-align: center;
+    overflow: hidden;
+    position: absolute;
+  }
+}
+
+@media (max-width: 350px) {
+  /***************************** max-width: 350px *********************************/
+  /************************* TABS => tab-content (Mobile) *************************/
+  /********************************************************************************/
+
+  .page-contest-come .lineup-block p {
+    font-size: 8px !important;
+  }
+  .page-contest-come .table .text-green {
+    padding-right: 0px;
+  }
+
+  /*===========================================
+.partial-classification ( tab classificaÃ§Ã£o ) max-width: 350px
+=============================================*/
+  .page-contest-come .lobby-table.width-all {
+    margin-top: 75px;
+  }
+
+  .partial-classification .search-field .form-control {
+    margin-top: -7.5px !important;
+  }
+  .partial-classification .table-scroll .table tbody tr {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-flex-item-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  /*===============================
+.partial-stats  ( tab Stats RDB ) max-width: 350px
+=================================*/
+
+  .page-contest-come .stats > div > div {
+    margin-top: 15px;
+  }
+
+  .page-contest-come .lineup-block p {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  /***************************** max-width: 320px *********************************/
+  /************************* TABS => tab-content (Mobile) *************************/
+  /********************************************************************************/
+
+  /*===========================================
+.partial-classification ( tab classificaÃ§Ã£o )
+=============================================*/
+
+  .page-contest-come .lobby-table.width-all {
+    margin-top: 0px;
+  }
+
+  .page-contest-come .partial-classification .table-heading .filter {
+    left: 157px;
+  }
+
+  .page-contest-come .lobby-table .table-scroll {
+    padding-top: 0px;
+  }
+
+  .partial-classification table.table.players-table.classification tbody tr {
+    padding-top: 0px;
+  }
+
+  .page-contest-come .partial-classification .participant > div > p {
+    font-size: 8px !important;
+    width: 28ch;
+  }
+  .partial-classification
+    table.table.players-table.classification
+    tbody
+    tr
+    .td-media {
+    font-size: 11px !important;
+  }
+
+  .page-contest-come .partial-classification .lobby-table.width-all {
+    margin-top: -148px;
+  }
+}
+
+/* correÃ§Ãµs smartphones com altura maiores */
+
+@media (max-width: 569px) and (max-height: 900px) {
+  .page-contest-come .partial-my-team .gridiron .position-line.fw {
+    top: 5%;
+  }
+
+  /* .page-contest-come .partial-my-team .gridiron .position-line.md {
+        top: 16%;
+    }
+
+    .page-contest-come .partial-my-team .gridiron .position-line.df {
+        top: 30%;
+    }
+    .page-contest-come .partial-my-team .gridiron .position-line.gk {
+        top: 43%;
+    } */
+
+  .page-contest-come .partial-my-team .gridiron .position-line.md {
+    top: 14%;
+  }
+
+  .page-contest-come .partial-my-team .gridiron .position-line.df {
+    top: 28%;
+  }
+  .page-contest-come .partial-my-team .gridiron .position-line.gk {
+    top: 40%;
+  }
+  .page-contest-come .lineup-block .tab-content.active {
+    height: 81vh;
+  }
+}
+
+@media (max-width: 400px) and (max-height: 680px) {
+  .page-contest-come .partial-my-team .gridiron .position-line.fw {
+    top: -1%;
+  }
+
+  .page-contest-come .partial-my-team .gridiron .position-line.md {
+    top: 8%;
+  }
+
+  .page-contest-come .partial-my-team .gridiron .position-line.df {
+    top: 22%;
+  }
+  .page-contest-come .partial-my-team .gridiron .position-line.gk {
+    top: 33%;
+  }
+
+  .page-contest-come
+    .partial-my-team
+    .gridiron
+    .position-line.md-order-5
+    + .position-line.df {
+    top: 21%;
+  }
+}
+@media (max-width: 360px) and (max-height: 640px) {
+  .page-contest-come .tab-content.active {
+    height: 75vh;
+  }
+}
