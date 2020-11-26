@@ -1,0 +1,14 @@
+{
+    "name": "Reis da Bola",
+    "short_name": "Reis da Bola",
+    "icons": [
+        {
+            "src": "/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#405983",
+    "background_color": "#405983",
+    "display": "standalone"
+}
