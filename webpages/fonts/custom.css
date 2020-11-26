@@ -1,0 +1,128 @@
+/*FONTS*/
+
+
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('../fonts/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_bold-webfont.woff') forTTmat('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+div.status-legend-box {
+	padding: 5px;
+	background-color: #1f1f1f;
+}
+div.status-legend-box span.status {
+	font-size: 12px;	
+}
+.other-stat-details {
+	font-size: 12px;
+	//display: none;
+}
+
+.text-success {
+	color: #569b4f;
+}
+
+.text-error {
+	color: #ec5a4e;
+}
+
+div.static-page ul{
+	list-style: inherit;
+}
+
+div.static-page li{
+	margin-left: 15px;
+}
+
+div.beta-warning {
+	width: 100%;
+	min-height: 35px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #ea9400;
+	font-size: 17px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+div.beta-warning a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.title-header-badge {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.title-header-badge h3 {
+	float: left;
+	font-size: 20px;	
+	margin-top: 15px;
+}
+
+.title-header-badge .header-badge {
+	float: left;
+	margin-right: 10px;
+}
+
+.header-badge {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 35px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  background: #ea9400;
+  font-weight: bold;
+}
+
+.disclaimer-beta {
+	padding: 10px;
+	border: 2px solid #ea9400;
+	height: 100px;
+	overflow-y: auto;
+}
+
+.disclaimer-beta h3 {
+	text-align: center;
+}
